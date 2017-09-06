@@ -3,9 +3,8 @@ import React, {Component} from 'react';
 export default class Details extends Component {
   render() {
     return (
-      <section className="space details">
+      <section className="details">
 
-        <hr class="featurette-divider"/>
 
         <div className="row featurette justify-content-start doctor main-panels">
           <div className="col-md-5 panels">
@@ -16,7 +15,6 @@ export default class Details extends Component {
           </div>
         </div>
 
-        <hr class="featurette-divider"/>
 
         <div className="row featurette justify-content-center services-list main-panels">
           <div className="col-md-5 ml-auto panels">
@@ -27,8 +25,6 @@ export default class Details extends Component {
           </div>
         </div>
 
-        <hr class="featurette-divider"/>
-
         <div className="row featurette justify-content-start office main-panels">
           <div className="col-md-5  panels">
             <h2 className="featurette-heading">About
@@ -37,8 +33,6 @@ export default class Details extends Component {
             <p className="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
           </div>
         </div>
-
-        <hr class="featurette-divider"/>
 
       </section>
     )

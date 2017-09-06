@@ -8,7 +8,10 @@ export default class Local extends Component{
 
           <Map/>
           <div className="col-5 my-auto">
-            <h2>Contact Us</h2>
+            <h4>Contact Us</h4>
+            <p>(864) 582-5000</p>
+            <h4>Hours</h4>
+              <p>open all day every day</p>
           </div>
 
       </section>

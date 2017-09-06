@@ -11,7 +11,7 @@ export default class Carousel extends Component {
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="first-slide" src="https://www.acesdental.com/wp-content/uploads/2016/08/AcesDentalBanner3-1268x362.png" alt="First slide"/>
+              <img className="first-slide" src="http://dentistndontist.com/wp-content/uploads/2015/10/home-banner-01.png" alt="First slide"/>
               <div className="container">
                 <div className="carousel-caption d-none d-md-block text-left">
                   <h1>Pine Street Dental</h1>
@@ -23,7 +23,7 @@ export default class Carousel extends Component {
               </div>
             </div>
             <div className="carousel-item">
-              <img className="second-slide" src="http://waytosmile.com/wp-content/uploads/2017/02/dentist-north-lauderdale.jpg" alt="Second slide"/>
+              <img className="second-slide" src="http://dentistndontist.com/wp-content/uploads/2015/10/home-banner-01.png" alt="Second slide"/>
               <div className="container">
                 <div className="carousel-caption d-none d-md-block">
                   <h1>Services</h1>
@@ -35,7 +35,7 @@ export default class Carousel extends Component {
               </div>
             </div>
             <div className="carousel-item">
-              <img className="third-slide" src="http://www.smilepointdental.com/wp-content/uploads/2017/01/banner_img_1.jpg" alt="Third slide"/>
+              <img className="third-slide" src="http://dentistndontist.com/wp-content/uploads/2015/10/home-banner-01.png" alt="Third slide"/>
               <div className="container">
                 <div className="carousel-caption d-none d-md-block text-right">
                   <h1>Schedule an appointment today</h1>

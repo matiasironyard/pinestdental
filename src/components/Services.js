@@ -1,27 +1,34 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
+import ServiceCategories from '../data/servicescatergories.js'
+import Modal from '../components/Modal.js'
 
-export default class Services extends Component{
-  render(){
-    return(
-      <section className="row justify-content-md-center space services">
-        <div className="col-lg-4">
+console.log(ServiceCategories())
+
+export default class Services extends Component {
+  render() {
+    let self = this;
+    let descriptions = ServiceCategories().map((items) => {
+      return items.description
+    })
+    let categories = ServiceCategories().map((items) => {
+      let key = Math.random();
+      let modalTarget = Math.random().toString(36).substring(7);
+      console.log('i', items)
+      return (
+        <div key={key} className="col-sm-12  col-md-5 services">
           <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="200" height="200"/>
-          <h2 className="headings">Crowns</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+          <h2 className="headings">{items.service}</h2>
+          <p>{items.description}</p>
+          <button type="button" className="btn btn-default" data-toggle="modal" data-target={`#${modalTarget}`}>
+            View Services
+          </button>
+          <Modal target={modalTarget} services={items} details={items.details}/>
         </div>
-        <div className="col-lg-4">
-          <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="200" height="200"/>
-          <h2 className="headings">Fillings</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div className="col-lg-4">
-          <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="200" height="200"/>
-          <h2 className="headings">Oral Surgery</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a className="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div>
+      )
+    })
+    return (
+      <section className="row justify-content-md-center services-row">
+        {categories}
       </section>
     )
   }
