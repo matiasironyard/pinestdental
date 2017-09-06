@@ -23,7 +23,7 @@ export default function() {
       ]
     }, {
       service: "Restorative Dentistry",
-      description: "Restorative dentistry involves the diagnosis and treatment of dental problems that may affect your overall health and smile. This includes the repair of broken, infected or otherwise damaged teeth. Dr. Summers serves as the primary dental provider \for his patients in managing their oral health care needs and coordinating treatment with specialists when necessary.",
+      description: "Restorative dentistry involves the diagnosis and treatment of dental problems that may affect your overall health and smile. This includes the repair of broken, infected or otherwise damaged teeth. one two three four five six sevent eight nine ten",
       details: [
         {
           service: 'cleaning',

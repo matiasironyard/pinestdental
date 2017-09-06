@@ -15,20 +15,30 @@ export default class Services extends Component {
       let modalTarget = Math.random().toString(36).substring(7);
       console.log('i', items)
       return (
-        <div key={key} className="col-sm-12  col-md-5 services">
-          <img className="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="200" height="200"/>
-          <h2 className="headings">{items.service}</h2>
-          <p>{items.description}</p>
-          <button type="button" className="btn btn-default" data-toggle="modal" data-target={`#${modalTarget}`}>
-            View Services
-          </button>
-          <Modal target={modalTarget} services={items} details={items.details}/>
+        <div key={key} className="col-sm-5">
+          <div className="card">
+          <div className="card-body">
+            <h4 className="card-title headings">{items.service}</h4>
+            <p className="card-text">{items.description}</p>
+            <button type="button" className="btn btn-default" data-toggle="modal" data-target={`#${modalTarget}`}>
+              View Services
+            </button>
+            <Modal target={modalTarget} services={items} details={items.details}/>
+          </div>
+        </div>
         </div>
       )
     })
     return (
-      <section className="row justify-content-md-center services-row">
-        {categories}
+      <section className="services-row">
+        <div className="row-fluid services-header">
+          <h1 className="services-heading">Pine Street Dental
+            <span className="sub-headings">Services</span>
+          </h1>
+        </div>
+        <div className="row justify-content-center service-cards-row">
+          {categories}
+        </div>
       </section>
     )
   }

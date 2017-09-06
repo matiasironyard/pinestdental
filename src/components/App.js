@@ -13,9 +13,7 @@ class App extends Component {
         <Nav/>
         <Carousel/>
         <div className="row justify-content-center details-row">
-          <div className="col-md-10 col-xs-12 details-col">
-            <Details/>
-          </div>
+          <Details/>
         </div>
         <Services/>
         <Local/>

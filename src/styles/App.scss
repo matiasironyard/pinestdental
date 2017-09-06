@@ -2,7 +2,9 @@ body {
   margin: -15px;
   padding: 0;
   font-family: sans-serif;
+  color: rgba(0, 0, 0, .87)
 }
+
 
 
 .App {
@@ -33,7 +35,7 @@ body {
 
 .panels{
   background-color: rgba(248, 249, 250, 0.5);
-  padding-top: 50px;
+  padding: 50px 80px 50px 80px;
   //height: 98%;
 }
 
@@ -45,6 +47,17 @@ body {
 .services-row{
   position: relative;
   bottom: 50px;
+  .services-header{
+    background-image: url('https://tbcdn.talentbrew.com/company/641/FULL_v2_0/img/banner-dental-support.jpg');
+    height: 350px;
+    width: 100%;
+    color: white;
+    padding-top: 10%;
+  }
+  .service-cards-row{
+    position: relative;
+    bottom: 50px;
+  }
 
   .services{
     padding: 30px 15px 30px 15px;
@@ -58,6 +71,13 @@ body {
     background-size: cover;
     background-position: left;
   }
+  .card{
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+    border: 0px;
+  }
+  .sub-headings{
+      color: #0067B1;
+    }
 }
 
 .office{
@@ -76,7 +96,7 @@ body {
   .carousel-caption{
     padding-bottom: 100px;
     background-color: rgba(28, 97, 152, 0.8);
-    padding: 30px;
+    padding: 30px 80px 30px 80px;
     position: relative;
     bottom: 100px;
     left: 0px;
@@ -95,6 +115,7 @@ body {
 .navigation{
   background-color: rgba(28, 97, 152, 0.8);
   box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.58);
+  border-bottom: 10px solid rgba(255, 255, 255, 0.60);
 }
 
 .btn{
@@ -104,4 +125,40 @@ body {
 
 h1{
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
+}
+
+
+.list-group-item {
+  border: 0px;
+  h5{
+    background-color: rgba(28, 97, 152, 0.8);
+  text-align: left;
+  padding: 15px;
+  color: white;
+  }
+}
+
+.modal-content{
+  border-radius: 0px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
+  .modal-header{
+    background-color: rgba(28, 97, 152, 0.8);
+    color: white;
+  }
+  .modal-body{
+    padding: 0px;
+  }
+}
+
+.rounded-circle{
+  margin: 15px;
+}
+
+.card{
+  padding: 0px;
+  margin: 15px;
+  border-radius: 0px;
+  img{
+    border-radius: 0px;
+  }
 }

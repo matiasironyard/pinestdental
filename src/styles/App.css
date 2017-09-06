@@ -1,7 +1,8 @@
 body {
   margin: -15px;
   padding: 0;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.87); }
 
 .App {
   text-align: center; }
@@ -23,7 +24,7 @@ body {
 
 .panels {
   background-color: rgba(248, 249, 250, 0.5);
-  padding-top: 50px; }
+  padding: 50px 80px 50px 80px; }
 
 .doctor {
   background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/dentist.jpg");
@@ -33,6 +34,15 @@ body {
 .services-row {
   position: relative;
   bottom: 50px; }
+  .services-row .services-header {
+    background-image: url("https://tbcdn.talentbrew.com/company/641/FULL_v2_0/img/banner-dental-support.jpg");
+    height: 350px;
+    width: 100%;
+    color: white;
+    padding-top: 10%; }
+  .services-row .service-cards-row {
+    position: relative;
+    bottom: 50px; }
   .services-row .services {
     padding: 30px 15px 30px 15px;
     margin: 5px;
@@ -41,6 +51,11 @@ body {
     background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/services.png");
     background-size: cover;
     background-position: left; }
+  .services-row .card {
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
+    border: 0px; }
+  .services-row .sub-headings {
+    color: #0067B1; }
 
 .office {
   background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/office2.jpg");
@@ -56,7 +71,7 @@ body {
   .carousel .carousel-caption {
     padding-bottom: 100px;
     background-color: rgba(28, 97, 152, 0.8);
-    padding: 30px;
+    padding: 30px 80px 30px 80px;
     position: relative;
     bottom: 100px;
     left: 0px;
@@ -70,7 +85,8 @@ body {
 
 .navigation {
   background-color: rgba(28, 97, 152, 0.8);
-  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.58); }
+  box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.58);
+  border-bottom: 10px solid rgba(255, 255, 255, 0.6); }
 
 .btn {
   border-radius: 0px;
@@ -78,3 +94,30 @@ body {
 
 h1 {
   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4); }
+
+.list-group-item {
+  border: 0px; }
+  .list-group-item h5 {
+    background-color: rgba(28, 97, 152, 0.8);
+    text-align: left;
+    padding: 15px;
+    color: white; }
+
+.modal-content {
+  border-radius: 0px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5); }
+  .modal-content .modal-header {
+    background-color: rgba(28, 97, 152, 0.8);
+    color: white; }
+  .modal-content .modal-body {
+    padding: 0px; }
+
+.rounded-circle {
+  margin: 15px; }
+
+.card {
+  padding: 0px;
+  margin: 15px;
+  border-radius: 0px; }
+  .card img {
+    border-radius: 0px; }
