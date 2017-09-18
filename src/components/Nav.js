@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import logo from '../images/logo-green.png'
 
 export default class Nav extends Component {
   render() {
     return (
       <nav className="navbar navbar-expand-md fixed-top navbar-dark navigation ">
+       <img src={logo} alt=""  style={{"height": "50px"}} className="img-fluid float-left"/>
         <a className="navbar-brand" href="#">Pine Street Dental</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>

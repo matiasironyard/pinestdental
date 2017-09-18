@@ -1,7 +1,7 @@
 body {
   margin: -15px;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
   color: rgba(0, 0, 0, 0.87); }
 
 .App {
@@ -16,9 +16,6 @@ body {
 .primary-text {
   color: darkgrey; }
 
-.space {
-  margin: 30px 0 30px 0; }
-
 .main-panels {
   min-height: 400px; }
 
@@ -32,27 +29,31 @@ body {
   background-position: center; }
 
 .services-row {
-  position: relative;
-  bottom: 50px; }
+  position: relative; }
   .services-row .services-header {
     background-image: url("https://tbcdn.talentbrew.com/company/641/FULL_v2_0/img/banner-dental-support.jpg");
     height: 350px;
     width: 100%;
     color: white;
     padding-top: 10%; }
+  .services-row .services-header-right {
+    padding: 50px 15px 30px 15px; }
   .services-row .service-cards-row {
     position: relative;
-    bottom: 50px; }
+    bottom: 50px;
+    background-color: white;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.45); }
+  .services-row .services-header {
+    background-image: url("../images/dentist.jpg");
+    background-size: cover; }
   .services-row .services {
     padding: 30px 15px 30px 15px;
-    margin: 5px;
-    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.45); }
+    margin: 5px; }
   .services-row .services-list {
     background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/services.png");
     background-size: cover;
     background-position: left; }
   .services-row .card {
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4);
     border: 0px; }
   .services-row .sub-headings {
     color: #0067B1; }
@@ -65,17 +66,17 @@ body {
 .local {
   background-color: #eeeeee;
   padding: 50px 15px 50px 15px; }
+  .local .contact-pane {
+    padding: 0 30px 0 30px;
+    text-align: center; }
 
-.carousel {
-  padding-bottom: 50px; }
-  .carousel .carousel-caption {
-    padding-bottom: 100px;
-    background-color: rgba(28, 97, 152, 0.8);
-    padding: 30px 80px 30px 80px;
-    position: relative;
-    bottom: 100px;
-    left: 0px;
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4); }
+.carousel .carousel-caption {
+  background-color: rgba(28, 97, 152, 0.9);
+  padding: 30px 80px 30px 80px;
+  position: relative;
+  bottom: 50px;
+  left: 0px;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.4); }
 
 .details-row {
   position: relative;
@@ -91,9 +92,6 @@ body {
 .btn {
   border-radius: 0px;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4); }
-
-h1 {
-  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4); }
 
 .list-group-item {
   border: 0px; }

@@ -12,9 +12,7 @@ class App extends Component {
       <div className="App container-fluid">
         <Nav/>
         <Carousel/>
-        <div className="row justify-content-center details-row">
-          <Details/>
-        </div>
+        <Details/>
         <Services/>
         <Local/>
         <Footer/>

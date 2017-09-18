@@ -21,7 +21,7 @@ export default class Services extends Component {
             <h4 className="card-title headings">{items.service}</h4>
             <p className="card-text">{items.description}</p>
             <button type="button" className="btn btn-default" data-toggle="modal" data-target={`#${modalTarget}`}>
-              View Services
+              View Details
             </button>
             <Modal target={modalTarget} services={items} details={items.details}/>
           </div>
@@ -30,15 +30,19 @@ export default class Services extends Component {
       )
     })
     return (
-      <section className="services-row">
-        <div className="row-fluid services-header">
-          <h1 className="services-heading">Pine Street Dental
-            <span className="sub-headings">Services</span>
-          </h1>
-        </div>
-        <div className="row justify-content-center service-cards-row">
-          {categories}
-        </div>
+      <section className="services-row row justify-content-center">
+          <div className="col-md-10">
+            <div className="row justify-content-center service-cards-row">
+                <div className="col-8 d-none d-lg-block services-header"/>
+                <div className="col-lg-4 col-md-12 services-header-right">
+                  <h1 className="services-heading">Pine Street Dental
+                    <span className="sub-headings">Services</span>
+                  </h1>
+                  <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
+                </div>
+            {categories}
+            </div>
+          </div>
       </section>
     )
   }

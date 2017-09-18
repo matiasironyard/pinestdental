@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 export default class Carousel extends Component {
   render() {
     return (
-        <section id="myCarousel" className="carousel slide" data-ride="carousel">
+        <section id="myCarousel" className="carousel slide row" data-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
               <img className="first-slide" src="http://dentistndontist.com/wp-content/uploads/2015/10/home-banner-01.png" alt="First slide"/>

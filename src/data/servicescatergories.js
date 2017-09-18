@@ -18,7 +18,7 @@ export default function() {
           description: 'Technology has resulted in significant improvements in dentistry and that is particularly true when it comes to the use of digital radiology (digital x-rays) instead of traditional x-ray technology.'
         }, {
           service: 'Night Guards (hard and soft)',
-          description: 'Many patients are completely unaware that they may be damaging their teeth as a result of grinding while asleep. During a dental examination, Dr. Summers can detect tooth wear and cracks commonly caused by tooth grinding. The patient may notice a sore jaw in the morning if they have been grinding their teeth...'
+          description: 'Many patients are completely unaware that they may be damaging their teeth as a result of grinding while asleep. During a dental examination, Dr. Figueroa-Valle can detect tooth wear and cracks commonly caused by tooth grinding. The patient may notice a sore jaw in the morning if they have been grinding their teeth...'
         }
       ]
     }, {
