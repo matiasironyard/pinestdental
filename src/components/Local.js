@@ -1,58 +1,69 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import Map from '../components/Map.js'
+import {List, Header, Icon} from 'semantic-ui-react'
 
-export default class Local extends Component{
-  render(){
-    return(
-      <section className="row no-gutters justify-content-center space local">
-          <Map/>
-          <div className="col-md-5 contact-pane">
-            <h4>Contact Us</h4>
-            <p>(864) 582-5000</p>
-            <hr/>
-            <div className="col">
-              <h4>Business Hours</h4>
-              <div className="row justify-content-center">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th>Day</th>
-                      <th>Morning</th>
-                      <th>Afternoon</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">Monday</th>
-                      <td>8:30 a.m - 12 p.m</td>
-                      <td>1 - 5 p.m</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Tuesday</th>
-                        <td>8:30 a.m - 12 p.m</td>
-                        <td>1 - 5 p.m</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Wednesday</th>
-                        <td>8:30 a.m - 12 p.m</td>
-                        <td>1 - 5 p.m</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Thursday</th>
-                        <td>8:30 a.m - 12 p.m</td>
-                        <td>1 - 5 p.m</td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Friday-Sunday</th>
-                      <td>Closed</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+export default class Local extends Component {
+  render() {
+    return (<section className="row no-gutters justify-content-center space local">
+      <Map/>
+      <div className="col-md-5 contact-pane">
+        <Header as='h3' icon >
+            <Icon name='phone' color="blue"/>
+            Phone Number
+            <Header.Subheader>
+(864) 582-5000
+</Header.Subheader>
 
-      </section>
-    )
+          </Header>
+
+        <hr/>
+        <div className="col">
+          <Header as='h3' icon >
+              <Icon name='calendar'  color="blue"/>
+              Husinesses Hours
+
+            </Header>
+          <List divided="divided" relaxed="relaxed">
+            <List.Item>
+
+              <List.Content>
+                <List.Header as='a'>Monday</List.Header>
+                <List.Description as='a'>8:30 a.m - 1 p.m / 2 p.m - 5 p.m</List.Description>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+
+              <List.Content>
+                <List.Header as='a'>Tuesday</List.Header>
+                <List.Description as='a'>8:30 a.m - 1 p.m / 2 p.m - 5 p.m</List.Description>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+
+              <List.Content>
+                <List.Header as='a'>Wednesday</List.Header>
+                <List.Description as='a'>8:30 a.m - 1 p.m / 2 p.m - 5 p.m</List.Description>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+
+              <List.Content>
+                <List.Header as='a'>Thursday</List.Header>
+                <List.Description as='a'>8:30 a.m - 1 p.m / 2 p.m - 4 p.m</List.Description>
+              </List.Content>
+            </List.Item>
+            <List.Item>
+
+              <List.Content>
+                <List.Header as='a'>Friday-Sunday</List.Header>
+                <List.Description as='a'>Closed</List.Description>
+              </List.Content>
+            </List.Item>
+          </List>
+
+        </div>
+      </div>
+
+    </section>)
   }
 }
