@@ -24,7 +24,7 @@ body {
   padding: 50px 80px 50px 80px; }
 
 .doctor {
-  background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/0001.jpg");
+  background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/staff1.jpg");
   background-size: cover;
   background-position: center; }
 
