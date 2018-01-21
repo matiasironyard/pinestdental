@@ -15,9 +15,9 @@ export default class Office extends Component {
         </Grid.Column>
         <Grid.Column width={6}>
           <Container>
-            <Header size='huge' color="blue">Pine Street Dental
+            <Header size='huge' color="blue" style={{textTransform: "uppercase"}}>Pine Street Dental
               <Header.Subheader>
-              About
+              Providing general dentistry to the family and friends of Spartanburg and the Upstate for over 40 years.
               </Header.Subheader>
             </Header>
 

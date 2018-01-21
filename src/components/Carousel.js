@@ -6,7 +6,7 @@ export default class Carousel extends Component {
         <section id="myCarousel" className="carousel slide row" data-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img className="first-slide" src="http://dentistndontist.com/wp-content/uploads/2015/10/home-banner-01.png" alt="First slide"/>
+              <img className="first-slide" style={{height: "700px", width: "100%", objectFit: "cover"}} src="../images/0002.jpg" alt="First slide"/>
               <div className="container">
                 <div className="carousel-caption d-none d-md-block text-left">
                   <h1>Pine Street Dental</h1>
@@ -18,7 +18,7 @@ export default class Carousel extends Component {
               </div>
             </div>
             <div className="carousel-item">
-              <img className="second-slide" src="http://dentistndontist.com/wp-content/uploads/2015/10/home-banner-01.png" alt="Second slide"/>
+              <img className="second-slide" style={{height: "700px", width: "100%", objectFit: "cover"}} src="../images/0002.jpg" alt="Second slide"/>
               <div className="container">
                 <div className="carousel-caption d-none d-md-block">
                   <h1>Services</h1>
@@ -30,7 +30,7 @@ export default class Carousel extends Component {
               </div>
             </div>
             <div className="carousel-item">
-              <img className="third-slide" src="http://dentistndontist.com/wp-content/uploads/2015/10/home-banner-01.png" alt="Third slide"/>
+            <img className="third-slide" style={{height: "700px", width: "100%", objectFit: "cover"}} src="../images/0002.jpg" alt="Third slide"/>
               <div className="container">
                 <div className="carousel-caption d-none d-md-block text-right">
                   <h1>Schedule an appointment today</h1>

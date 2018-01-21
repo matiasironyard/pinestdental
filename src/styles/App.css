@@ -1,3 +1,5 @@
+
+
 body {
   margin: -15px;
   padding: 0;
@@ -24,7 +26,7 @@ body {
   padding: 50px 80px 50px 80px; }
 
 .doctor {
-  background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/dentist.jpg");
+  background-image: url("../images/staff1.jpg");
   background-size: cover;
   background-position: center; }
 
@@ -45,7 +47,7 @@ body {
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.45); }
 
 .services-row .services-header {
-  background-image: url("../images/dentist.jpg");
+  background-image: url("../images/staff1.jpg");
   background-size: cover; }
 
 .services-row .services {
@@ -53,7 +55,7 @@ body {
   margin: 5px; }
 
 .services-row .services-list {
-  background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/services.png");
+  background-image: url("../images/staff1.jpg");
   background-size: cover;
   background-position: left; }
 
@@ -64,7 +66,7 @@ body {
   color: #0067B1; }
 
 .office {
-  background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/office2.jpg");
+  background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/staff1.jpg");
   background-size: cover;
   background-position: left; }
 

@@ -11,7 +11,7 @@ export default class Local extends Component {
             <Icon name='phone' color="blue"/>
             Phone Number
             <Header.Subheader>
-(864) 582-5000
+              <a href="tel:-864-582-5000">(864) 582-5000</a>
 </Header.Subheader>
 
           </Header>
@@ -23,7 +23,7 @@ export default class Local extends Component {
               Husinesses Hours
 
             </Header>
-          <List divided="divided" relaxed="relaxed">
+          <List divided={true} relaxed={true}>
             <List.Item>
 
               <List.Content>
