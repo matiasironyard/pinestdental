@@ -23,10 +23,6 @@ body {
   background-color: rgba(248, 249, 250, 0.5);
   padding: 50px 80px 50px 80px; }
 
-.doctor {
-  background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/pinestdentalstaff-1.jpg");
-  background-size: cover;
-  background-position: center; }
 
 .services-row .services-header {
   background-image: url("https://tbcdn.talentbrew.com/company/641/FULL_v2_0/img/banner-dental-support.jpg");
@@ -44,18 +40,13 @@ body {
   background-color: white;
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.45); }
 
-.services-row .services-header {
-  background-image: url("../images/pinestdentalstaff-1.jpg");
-  background-size: cover; }
+
 
 .services-row .services {
   padding: 30px 15px 30px 15px;
   margin: 5px; }
 
-.services-row .services-list {
-  background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/pinestdentaloffice-1.jpg");
-  background-size: cover;
-  background-position: left; }
+
 
 .services-row .card {
   border: 0px; }
@@ -63,10 +54,7 @@ body {
 .services-row .sub-headings {
   color: #0067B1; }
 
-.office {
-  background-image: linear-gradient(rgba(225, 225, 225, 0.2), rgba(225, 225, 225, 0.5)), url("../images/pinestdentalstaff-1.jpg");
-  background-size: cover;
-  background-position: left; }
+
 
 .local {
   background-color: #eeeeee;
