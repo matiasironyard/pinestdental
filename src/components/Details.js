@@ -17,7 +17,7 @@ import {
 export default class Details extends Component {
   render() {
     return (<Grid style={{
-        padding: "30px 0 30px 0"
+        paddingBottom: "30px"
       }}>
       <Grid.Column width={2}></Grid.Column>
       <Grid.Column width={12}>
