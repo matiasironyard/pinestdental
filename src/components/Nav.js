@@ -5,7 +5,7 @@ export default class Nav extends Component {
     return (
       <nav className="navbar navbar-expand-md fixed-top navbar-dark navigation ">
        <img src="../images/logo.png" alt=""  style={{"height": "50px"}} className="img-fluid float-left"/>
-        <a className="navbar-brand" href="#">Pine Street Dental</a>
+        <a className="navbar-brand" href="#" style={{textTransform: "uppercase"}}>Pine Street Dental</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>

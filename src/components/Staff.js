@@ -5,9 +5,9 @@ import {Card, Icon, Image, Grid, Segment, Header, Divider} from 'semantic-ui-rea
 export default class Staff extends Component {
   render() {
     let staff = StaffData().map((item) => {
-      return (<Card style={{width: "20%"}} raised={true} key={item.key}>
+      return (<Card  raised={true} key={item.key}>
         <Image src={item.img} style={{
-            height: "200px",
+            height: "300px",
             width: "100%",
             objectFit: "cover"
           }}/>
@@ -29,8 +29,8 @@ export default class Staff extends Component {
     })
     return (<Grid>
         <Grid.Column>
-          <Header size='huge'color="blue" style={{textTransform: "uppercase"}}>Our Staff</Header>
-          <Card.Group style={{display: "flex", justifyContent: "center"}}>
+          <Header size='huge'color="blue" style={{textTransform: "uppercase", padding: "30px 0"}}>Our Staff</Header>
+          <Card.Group style={{display: "flex", justifyContent: "center"}} itemsPerRow={2}>
             {staff}
           </Card.Group>
 

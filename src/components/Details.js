@@ -22,13 +22,10 @@ export default class Details extends Component {
       <Grid.Column width={2}></Grid.Column>
       <Grid.Column width={12}>
         <Office/>
-          <Divider style={{marginBottom: "50px", marginTop: "50px"}}/>
 
         <Doctor/>
-          <Divider style={{marginBottom: "50px", marginTop: "50px"}}/>
 
         <Staff/>
-          <Divider style={{marginBottom: "50px", marginTop: "50px"}}/>
         <Services/>
       </Grid.Column>
       <Grid.Column width={2}></Grid.Column>

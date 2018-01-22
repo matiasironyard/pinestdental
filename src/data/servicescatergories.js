@@ -41,7 +41,7 @@ export default function() {
       ]
     }, {
       service: "Dental Implants",
-      description: "\for many years, dental implants have restored smiles that were lost due to tooth decay, cracks or missing teeth. Dental implants are artificial roots designed to support dentures, crowns and bridges. Please click below \for additional in\formation.",
+      description: "For many years, dental implants have restored smiles that were lost due to tooth decay, cracks or missing teeth. Dental implants are artificial roots designed to support dentures, crowns and bridges. Please click below \for additional information.",
       details: [
         {
           service: 'cleaning',

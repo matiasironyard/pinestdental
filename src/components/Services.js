@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import ServiceCategories from '../data/servicescatergories.js'
 import Modal from '../components/Modal.js';
-import img from '../images/0012.jpg';
+import img from '../images/pinestdentaloffice-1.jpg';
 import { Card, Icon, Image, Grid, Segment, Container, Header, Divider, List} from 'semantic-ui-react';
 
 console.log(ServiceCategories())
@@ -30,7 +30,7 @@ export default class Services extends Component {
       )
     })
     return (
-      <Grid stackable columns={2}>
+      <Grid stackable columns={2} style={{padding: "50px 0 0 0"}}>
 
         <Grid.Column width={9}>
 
