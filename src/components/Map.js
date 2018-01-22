@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Header, Icon, Divider } from 'semantic-ui-react'
+import { Header, Icon } from 'semantic-ui-react'
 
 
 export default class Map extends Component {
@@ -9,7 +9,7 @@ export default class Map extends Component {
 
     return (
       <div className="col-md-6">
-        <a href="https://her.is/2DSR6xP" target="_blank">
+        <a href="https://her.is/2DSR6xP" target="_blank" rel="noopener noreferrer">
           <Header as='h3' icon>
       <Icon name='location arrow' color="blue"/>
       Location

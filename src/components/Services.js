@@ -1,21 +1,14 @@
 import React, {Component} from 'react';
 import ServiceCategories from '../data/servicescatergories.js'
-import Modal from '../components/Modal.js';
 import img from '../images/pinestdentaloffice-1.jpg';
-import { Card, Icon, Image, Grid, Segment, Container, Header, Divider, List} from 'semantic-ui-react';
+import {  Image, Grid, Header, Divider, List} from 'semantic-ui-react';
 
 console.log(ServiceCategories())
 
 export default class Services extends Component {
   render() {
-    let self = this;
-    let descriptions = ServiceCategories().map((items) => {
-      return items.description
-    })
     let categories = ServiceCategories().map((items) => {
       let key = Math.random();
-      let modalTarget = Math.random().toString(36).substring(7);
-      console.log('i', items)
       return (
         <List.Item key={key} as='a'>
           <List.Content>

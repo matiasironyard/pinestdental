@@ -9,7 +9,7 @@ export default function() {
           description: 'Routine dental cleanings and exams twice per year are the cornerstone of maintaining optimum dental health...'},
           {
           service: 'Fluoride Treatment',
-          description: 'Fluoride is a naturally-occurring mineral found in or added to many water supplies to increase our teeth\’s resistance to tooth decay. Fluoride also works to reverse tooth decay in its early stages.'
+          description: "Fluoride is a naturally-occurring mineral found in or added to many water supplies to increase our teeth’s resistance to tooth decay. Fluoride also works to reverse tooth decay in its early stages."
         }, {
           service: 'Sealants',
           description: 'Dental sealants have become a popular tool in children\'s overall preventive dental care. They are a preventative measure to fight tooth decay on the chewing surfaces of the permanent molars. This thin plastic coating is applied to the chewing surfaces of the teeth, light cured, rinsed and dried creating a protective barrier against tooth decay.'

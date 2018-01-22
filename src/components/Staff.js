@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import StaffData from '../data/staff.js';
-import {Card, Icon, Image, Grid, Segment, Header, Divider} from 'semantic-ui-react';
+import {Card, Grid, Header, Image} from 'semantic-ui-react';
 
 export default class Staff extends Component {
   render() {

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import DoctorData from '../data/doctor.js';
 import DoctorImg from '../images/doctorfigueroa-1.jpg';
 import ReactMarkdown from 'react-markdown';
-import { Card, Icon, Image, Grid, Segment, Container, Header, Divider} from 'semantic-ui-react';
+import { Image, Grid, Container, Header, Divider} from 'semantic-ui-react';
 
 
 export default class Doctor extends Component {

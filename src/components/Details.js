@@ -1,17 +1,11 @@
 import React, {Component} from 'react';
-import StaffData from '../data/staff.js';
 import Doctor from '../components/Doctor.js';
 import Office from '../components/Office.js';
 import Staff from '../components/Staff.js';
 import Services from '../components/Services.js'
 
 import {
-  Card,
-  Icon,
-  Image,
-  Grid,
-  Segment,
-  Divider
+  Grid
 } from 'semantic-ui-react';
 
 export default class Details extends Component {

@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
-import Staff from '../data/staff.js';
 import PineStBldg from '../images/pinestdentaloffice-6.jpg';
-import Logo from '../images/logo.png';
-import { Card, Icon, Image, Grid, Segment, Container, Header, Divider} from 'semantic-ui-react';
+import { Grid, Header, Divider} from 'semantic-ui-react';
 
 
 export default class Office extends Component {
