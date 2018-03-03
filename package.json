@@ -8,10 +8,10 @@
     "google-maps-react": "^1.1.2",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.1.1",
-    "react": "^15.6.1",
-    "react-dom": "^15.6.1",
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
     "react-google-maps": "^7.3.0",
-    "react-markdown": "^3.1.4",
+    "react-markdown": "^3.2.2",
     "react-scripts": "1.0.12",
     "semantic-ui-react": "^0.77.1"
   },
