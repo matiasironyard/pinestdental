@@ -19,7 +19,7 @@ import {
 } from 'semantic-ui-react';
 import Local from '../components/Local.js';
 import Staff from '../components/Staff.js';
-import DoctorImg from '../images/doctorfigueroa-1.jpg';
+import DoctorImg from '../images/pinestdentaloffice-1.jpg'
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for

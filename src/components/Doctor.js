@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import DoctorData from '../data/doctor.js';
-import DoctorImg from '../images/doctorfigueroa-1.jpg';
+import DoctorImg from '../images/pinestdentaloffice-1.jpg'
 import ReactMarkdown from 'react-markdown';
 import { Image, Grid, Container, Header, Divider} from 'semantic-ui-react';
 
