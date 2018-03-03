@@ -2,6 +2,7 @@ import Staff1 from '../images/pinestdentalstaff-2.jpg'
 import Staff2 from '../images/pinestdentalstaff-3.jpg'
 import Staff3 from '../images/pinestdentalstaff-4.jpg'
 import Staff4 from '../images/pinestdentalstaff-5.jpg'
+import Doctor from '../images/doctorfigueroa-1.jpg'
 export default function() {
   return [
     {
@@ -28,6 +29,12 @@ export default function() {
       bio: "hello yall!",
       img: `${Staff4}`,
       key: 4
-    }
+    },    {
+          name: "omar",
+          position: "Dentista",
+          bio: "I'm awesome!",
+          img: `${Doctor}`,
+          key: 6
+        },
   ]
 };
