@@ -161,3 +161,23 @@ h1 {
     border-radius: 0;
   }
 }
+
+/*LandingPage*/
+
+.staff-background{
+  background-image: url("../images/pinestdentalstaff-1.jpg")!important;
+  background-size: cover !important;
+  background-repeat: none !important;
+  background-position: top !important;
+  min-height: 950px;
+}
+.top-nav{
+  background-color: #2185d0 !important;
+}
+.heading-text{
+  position: absolute !important;
+  bottom: 0 !important;
+  right: 30% !important;
+  width: 100% !important;
+  background-color: #2185d0;
+}
