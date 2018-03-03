@@ -27,8 +27,17 @@ export default class Doctor extends Component {
 
 
       <Grid stackable columns={2} style={{backgroundColor: "#e9ecef", borderRadius: ".28571429rem", boxShadow: "0 0 0 1px #d4d4d5, 0 2px 4px 0 rgba(34,36,38,.12), 0 2px 10px 0 rgba(34,36,38,.15)", margin: "50px 0 0 0"}}>
-        <Grid.Column width={9} style={{padding: "30px 50px"}}>
+      <Grid.Column width={8} style={{padding: "0"}}>
+        <Image fluid  src={DoctorImg} style={{objectFit: "cover", height: "800px"}}/>
+      </Grid.Column>
+        <Grid.Column width={8} >
           <Container>
+          <Header size='huge' color="blue" style={{textTransform: "uppercase", padding: "50px"}}>Pine Street Dental
+            <Divider/>
+            <Header.Subheader style={{color: "rgba(0,0,0,.95)", lineHeight: "2"}}>
+            Providing general dentistry to the family and friends of Spartanburg and the Upstate for over 40 years.
+            </Header.Subheader>
+          </Header>
             <Header size='huge' color="blue" style={{textTransform: "uppercase"}}>
               Dr. Figueroa-Valle
               <Header.Subheader>
@@ -44,9 +53,7 @@ export default class Doctor extends Component {
           </Container>
 
         </Grid.Column>
-        <Grid.Column width={7} style={{padding: "0"}}>
-          <Image size="large" src={DoctorImg}/>
-        </Grid.Column>
+
 
       </Grid>
 

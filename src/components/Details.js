@@ -13,11 +13,12 @@ export default class Details extends Component {
     return (<Grid style={{
         paddingBottom: "30px"
       }}>
-      <Grid.Column width={2}></Grid.Column>
-      <Grid.Column width={12}>
-        <Office/>
+      <Grid.Column width={16}>
 
         <Doctor/>
+</Grid.Column>
+
+<Grid.Column centered width={12}>
 
         <Staff/>
         <Services/>
