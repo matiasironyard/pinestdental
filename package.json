@@ -4,6 +4,8 @@
   "private": true,
   "homepage": "https://matiasironyard.github.io/dental",
   "dependencies": {
+    "gapi": "0.0.3",
+    "gapi-client": "0.0.3",
     "gh-pages": "^1.0.0",
     "google-maps-react": "^1.1.2",
     "node-sass-chokidar": "0.0.3",

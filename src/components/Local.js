@@ -7,16 +7,31 @@ import {
 	Grid,
 	Segment,
 	Container,
-	Divider
+	Divider,
+	Loader
 } from 'semantic-ui-react';
 
 export default class Local extends Component {
 	render() {
+		console.log('props', this.props)
+		let loader = <Loader active inline='centered' />
+		let phoneNumber = loader;
+		let address = loader;
+		let hours = loader;
+		let mapUrl = loader;
+		let data = loader;
+
+		if(this.props.data){
+			phoneNumber = this.props.data.result.formatted_phone_number;
+			address = this.props.data.result.formatted_address;
+			hours = this.props.data.result.opening_hours.weekday_text;
+			data = this.props.data.result;
+		}
 		return (
-			<Grid stackable columns={2} dentered className="space">
+			<Grid stackable columns={2}  className="space">
 				<Grid.Column width={10}>
 					<Segment>
-						<Map />
+						<Map data={data}/>
 					</Segment>
 				</Grid.Column>
 				<Grid.Column width={6}>
@@ -33,7 +48,7 @@ export default class Local extends Component {
 								<Icon name="phone" color="blue" />
 								Phone Number
 								<Header.Subheader>
-									<a href="tel:-864-582-5000">(864) 582-5000</a>
+									<a href="tel:-864-582-5000">{phoneNumber}</a>
 								</Header.Subheader>
 							</Header>
 						</Container>
