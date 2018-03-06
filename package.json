@@ -2,7 +2,7 @@
   "name": "omar",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://matiasironyard.github.io/dental",
+  "homepage": "https://matiasironyard.github.io/pinestdental/",
   "dependencies": {
     "gapi": "0.0.3",
     "gapi-client": "0.0.3",
