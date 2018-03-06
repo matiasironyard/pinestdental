@@ -18,6 +18,7 @@ import {
   Table,
 	Item
 } from "semantic-ui-react";
+import Blog from "../components/Blog.js"
 import Local from "../components/Local.js";
 import Staff from "../components/Staff.js";
 import DoctorImg from "../images/pinestdentaloffice-1.jpg";
@@ -224,6 +225,7 @@ export default class LandingPage extends Component {
     super();
     this.state = {
 			data: null,
+			blog: null
 		};
   }
   componentDidMount() {
@@ -240,19 +242,18 @@ export default class LandingPage extends Component {
       .then(function(data) {
         self.setState({data: data})
       });
-
   }
 
   render() {
-		let {data} = this.state;
+		let {data, blog} = this.state;
 		let reviews = []
+		let blogPost = null;
 		if(data != null){
 			data.result.reviews.map((item)=>{
-				console.log('item', item)
 				reviews.push(item)
 			})
 		}
-		console.log('data', data)
+
 
     return (
       <ResponsiveContainer>
@@ -343,6 +344,7 @@ export default class LandingPage extends Component {
         </Segment>
         <Segment style={{ padding: "8em 0em" }} vertical>
           <Container text>
+					<Blog/>
             <Header
               as="h3"
               style={{
@@ -351,6 +353,7 @@ export default class LandingPage extends Component {
                 color: "#2185d0"
               }}
             >
+
               The Pine Street Dental Difference
             </Header>
             <p style={{ fontSize: "1.33em" }}>What makes us special</p>
@@ -444,7 +447,8 @@ export default class LandingPage extends Component {
             >
               What happens when you dont brush your teeth?
             </Header>
-            <p style={{ fontSize: "1.33em" }}>The rot and fall off!</p>
+						<p style={{ fontSize: "1.33em" }}>kkdsfk</p>
+
           </Container>
         </Segment>
         <Container fluid className="local">
