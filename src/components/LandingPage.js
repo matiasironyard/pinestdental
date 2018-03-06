@@ -299,7 +299,7 @@ export default class LandingPage extends Component {
 						</Grid.Row>
 					</Grid>
 				</Segment>
-				<Segment style={{ padding: "0em" }} vertical>
+				<Segment style={{ padding: "0em", backgroundColor: "#add8e6", boxShadow: "rgba(34, 36, 38, 0.15) 0px 7px 10px" }} vertical>
 					<Grid celled="internally" columns="equal" stackable>
 						<Grid.Row textAlign="center" centered>
 							<Grid.Column
@@ -478,12 +478,13 @@ export default class LandingPage extends Component {
 								</Grid.Column>
 								<Grid.Column width={7}>
 									<Header as="h4" inverted>
-										Footer Header
+										Contact & Patient Information
 									</Header>
-									<p>
-										Extra space for a call to action inside the footer that
-										could help re-engage users.
-									</p>
+									<List link inverted>
+										<List.Item as="a">(864) 582-5000</List.Item>
+										<List.Item as="a">364 S. Pine Street, Suite A-101, Spartanburg, SC 29302</List.Item>
+										<List.Item as="a">Patient Form</List.Item>
+									</List>
 								</Grid.Column>
 							</Grid.Row>
 						</Grid>
