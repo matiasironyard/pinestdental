@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import PineStBldg from '../images/pinestdentaloffice-6.jpg';
-import { Grid, Header, Divider, Loader, Dimmer} from 'semantic-ui-react';
+import { Grid, Header, Divider, Loader, Dimmer, Segment, Button, Label} from 'semantic-ui-react';
+import ReactHtmlParser, { processNodes, convertNodeToElement, htmlparser2 } from 'react-html-parser';
+import moment from 'moment'
 
 
 
@@ -36,20 +37,41 @@ export default class Blog extends Component {
     )
     let {blogData} = this.state;
     console.log('BLOG DATA', this.state.blogData)
-    let blogPost;
+    let blogPostContent;
+    let blogPostTitle;
+    let blogId;
+    let blogLink;
+    let postedOn;
     if(blogData !== null){
-      blogData.map((post)=>{
-        blogPost = (
-          <div>
-          {post.items[0].title}
-          </div>
-        )
-      } else {loader}
+      blogPostContent = blogData.items[0].content;
+      blogPostTitle = blogData.items[0].title;
+      blogId = blogData.items[0].blog.id;
+      blogLink =`https://www.blogger.com/blogger.g?blogID=${blogId}`
+      postedOn = moment().startOf(blogData.items["0"].published).fromNow();
     }
+
     return (
-      <div>
-      {blogPost}
+
+      <Segment>
+      <Header as="h3" style={{
+        fontSize: "1.5em",
+        textTransform: "uppercase",
+        color: "#2185d0",
+      }}>
+      {blogPostTitle}
+      <Header.Subheader>
+      {postedOn}
+      </Header.Subheader>
+      </Header>
+      <Divider/>
+      <div style={{padding: "20px 15px"}}>
+      { ReactHtmlParser(blogPostContent) }
       </div>
+      <Divider/>
+      <a href={blogLink} target="_blank">
+      <Button basic color="blue" fluid>Read Recent Posts</Button>
+      </a>
+      </Segment>
         )
 
   }
