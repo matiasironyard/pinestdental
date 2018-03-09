@@ -31,6 +31,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "ws": "3.3.2"
+    "ws": "3.3.2",
+    "gh-pages": "^1.1.0",
+    "react-scripts": "^1.1.1"
   }
 }
