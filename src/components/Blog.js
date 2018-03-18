@@ -64,7 +64,7 @@ export default class Blog extends Component {
       </Header.Subheader>
       </Header>
       <Divider/>
-      <div style={{padding: "20px 15px"}}>
+      <div style={{padding: "20px 15px", height:"600px", overflow: "auto"}}>
       { ReactHtmlParser(blogPostContent) }
       </div>
       <Divider/>

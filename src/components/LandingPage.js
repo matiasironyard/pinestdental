@@ -100,8 +100,8 @@ class DesktopContainer extends Component {
 								<Menu.Item as="a" href="#services">
 									Services
 								</Menu.Item>
-								<Menu.Item as="a" href="#blog">
-									Blog
+								<Menu.Item as="a" href="#social">
+									Social
 								</Menu.Item>
 								<Menu.Item position="right">
 									<Button as="a" inverted={!fixed} href="#find-us">
@@ -114,6 +114,15 @@ class DesktopContainer extends Component {
 										primary={fixed}
 										style={{ marginLeft: "0.5em" }}>
 										Call Us
+									</Button>
+									<Button
+										as="a"
+										href="https://www.facebook.com/pinestdentalsc/"
+										target="_blank"
+										inverted={!fixed}
+										primary={fixed}
+										style={{ marginLeft: "0.5em" }}>
+										<Icon name='facebook' />
 									</Button>
 								</Menu.Item>
 							</Container>
@@ -144,8 +153,9 @@ class MobileContainer extends Component {
 
 		return (
 			<Responsive {...Responsive.onlyMobile}>
-				<Sidebar.Pushable>
+				<Sidebar.Pushable style={{position: "fixed"}}>
 					<Sidebar
+					style={{padding: "15px 0 0 15px"}}
 						as={Menu}
 						animation="uncover"
 						inverted
@@ -160,8 +170,14 @@ class MobileContainer extends Component {
 						<Menu.Item as="a" href="#services">
 							Services
 						</Menu.Item>
-						<Menu.Item as="a" href="#blog">
-							Blog
+						<Menu.Item as="a" href="#social">
+							Social
+						</Menu.Item>
+						<Menu.Item as="a" href="https://www.facebook.com/pinestdentalsc/" target="_blank">
+							Facebook
+						</Menu.Item>
+						<Menu.Item as="a" href="https://www.instagram.com/pinestdentalsc/" target="_blank">
+							Instagram
 						</Menu.Item>
 						<Menu.Item as="a" href="#find-us" primary>
 							Contact & Find Us
@@ -171,7 +187,7 @@ class MobileContainer extends Component {
 					<Sidebar.Pusher
 						dimmed={sidebarOpened}
 						onClick={this.handleToggle}
-						style={{ minHeight: "100vh" }}>
+						style={{ minHeight: "100vh"}}>
 						<Segment
 							inverted
 							textAlign="center"
@@ -295,10 +311,10 @@ export default class LandingPage extends Component {
 						<Grid.Row textAlign="center" centered>
 							<Grid.Column
 								width={4}
-								style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+								style={{ paddingBottom: "5em", paddingTop: "5em", display: "flex", alignItems: "center" }}>
 								{reviews[0] ? (
 									<Item.Group>
-										<Item>
+										<Item style={{display: "flex", alignItems: "center"}}>
 											<Item.Image
 												size="tiny"
 												src={reviews[0].profile_photo_url}
@@ -306,7 +322,7 @@ export default class LandingPage extends Component {
 
 											<Item.Content>
 												<Item.Description>
-													"{reviews[0].text} "
+													{reviews[0].text}
 												</Item.Description>
 												<Item.Extra>{reviews[0].author_name}</Item.Extra>
 											</Item.Content>
@@ -318,10 +334,10 @@ export default class LandingPage extends Component {
 							</Grid.Column>
 							<Grid.Column
 								width={5}
-								style={{ paddingBottom: "5em", paddingTop: "5em" }}>
+								style={{ paddingBottom: "5em", paddingTop: "5em",display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
 								{reviews[1] ? (
 									<Item.Group>
-										<Item>
+										<Item style={{display: "flex", alignItems: "center"}}>
 											<Item.Image
 												size="tiny"
 												src={reviews[1].profile_photo_url}
@@ -329,9 +345,23 @@ export default class LandingPage extends Component {
 
 											<Item.Content>
 												<Item.Description>
-													"{reviews[1].text} "
+													{reviews[1].text}
 												</Item.Description>
 												<Item.Extra>{reviews[1].author_name}</Item.Extra>
+											</Item.Content>
+										</Item>
+										<Divider/>
+
+										<Item style={{display: "flex", alignItems: "center"}}>
+											<Item.Image
+												size="tiny"
+												src={reviews[2].profile_photo_url}
+											/>
+											<Item.Content>
+												<Item.Description>
+													{reviews[2].text}
+												</Item.Description>
+												<Item.Extra>{reviews[2].author_name}</Item.Extra>
 											</Item.Content>
 										</Item>
 									</Item.Group>
@@ -412,9 +442,19 @@ export default class LandingPage extends Component {
 						textTransform: "uppercase",
 						color: "#2185d0"
 					}}>
-					<a href="#">Blog</a>
+					<a href="social">Social Media</a>
 				</Divider>
-				<Blog />
+				<Grid stackable id="social">
+					<Grid.Row>
+						<Grid.Column width={10}>
+							<Blog />
+						</Grid.Column>
+						<Grid.Column width={6}>
+							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpinestdentalsc%2F&tabs=timeline&width=400&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=527935110921167" style={{width:"100%", height:"800px", border: "none", overflow:"hidden"}} scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+						</Grid.Column>
+					</Grid.Row>
+				</Grid>
+
 				</Container>
 				</Segment>
 				<Segment inverted vertical style={{ padding: "5em 0em" }}>

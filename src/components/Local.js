@@ -41,7 +41,7 @@ export default class Local extends Component {
 								as="h2"
 								className="header"
 								horizontal
-								style={{ margin: '3em 0em', textTransform: 'uppercase' }}>
+								style={{ margin: '1em 0em', textTransform: 'uppercase' }}>
 								<a href="#">Call Us</a>
 							</Divider>
 							<Header as="h3" icon>
@@ -58,7 +58,7 @@ export default class Local extends Component {
 								as="h2"
 								className="header"
 								horizontal
-								style={{ margin: '3em 0em', textTransform: 'uppercase' }}>
+								style={{ margin: '1em 0em', textTransform: 'uppercase' }}>
 								<a href="#">Office Hours</a>
 							</Divider>
 
