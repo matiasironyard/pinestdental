@@ -3,7 +3,7 @@ export default function() {
     {
       name: "omar",
       position: "tech",
-      bio: "Omar Figueroa-Valle is a dentist, dental pain specialist, and cosmetic dentist serving the community of Greer, SC. Dr. Figueroa-Valle attended Ohio State University, where he received his dental degree.\n\n Dr. Figueroa-Valle is a part of Greer Family Dental Care. Outside of his practice, he enjoys spending time with his family and traveling. He welcomes patients and families of all ages from babies to seniors. \n \n During his consultations, he explains patients’ conditions and helps them choose an appropriate treatment plan.",
+      bio: "I graduated from Spartanburg High School in 2003 and USC Upstate in 2007. Completed Dental School at The Ohio State University in 2015, Go Buckeyes!  Andrea and I have two boys, Luca and Myles. In 2017 the office was renamed “Pine Street Dental”. I am happy to report that staff, location, hours, and phone number all remain the same. It is an honor to continue the practice of David Dedmon, DMD. A practice that has been part of the Spartanburg community for over 30 years.",
       img: "./images/doctorfigueroa-1.jpg"
     }
   ]

@@ -47,8 +47,8 @@ export default class Local extends Component {
 							<Header as="h3" icon>
 								<Icon name="phone" color="blue" />
 								Phone Number
-								<Header.Subheader>
-									<a href="tel:-864-582-5000">{phoneNumber}</a>
+								<Header.Subheader style={{padding: "15px 0"}}>
+									<a href="tel:-864-582-5000" style={{fontSize: "2rem"}}>{phoneNumber}</a>
 								</Header.Subheader>
 							</Header>
 						</Container>

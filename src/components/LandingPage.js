@@ -290,15 +290,6 @@ export default class LandingPage extends Component {
 					</Grid>
 				</Segment>
 
-				<Segment style={{ padding: "4em 0" }} vertical id="staff">
-					<Grid celled="internally" columns="equal" stackable centered>
-						<Grid.Row textAlign="center">
-							<Grid.Column width={12}>
-								<Staff />
-							</Grid.Column>
-						</Grid.Row>
-					</Grid>
-				</Segment>
 				<Segment style={{ padding: "0em", backgroundColor: "#add8e6", boxShadow: "rgba(34, 36, 38, 0.15) 0px 7px 10px" }} vertical>
 					<Grid celled="internally" columns="equal" stackable>
 						<Grid.Row textAlign="center" centered>
@@ -353,96 +344,42 @@ export default class LandingPage extends Component {
 				</Segment>
 				<Segment style={{ padding: "8em 0em" }} vertical>
 					<Container text>
-						<Header
-							as="h3"
-							style={{
-								fontSize: "2em",
-								textTransform: "uppercase",
-								color: "#2185d0"
-							}}>
-							The Pine Street Dental Difference
-						</Header>
-						<p style={{ fontSize: "1.33em" }}>What makes us special</p>
-						<Table celled>
-							<Table.Header>
-								<Table.Row>
-									<Table.HeaderCell>Service</Table.HeaderCell>
-									<Table.HeaderCell>Description</Table.HeaderCell>
-									<Table.HeaderCell>Pine Street Dental</Table.HeaderCell>
-									<Table.HeaderCell>Other Offices</Table.HeaderCell>
-								</Table.Row>
-							</Table.Header>
 
-							<Table.Body>
-								<Table.Row>
-									<Table.Cell>Cell</Table.Cell>
-									<Table.Cell>Cell</Table.Cell>
-									<Table.Cell>
-										<Icon color="green" name="checkmark" size="large" />
-									</Table.Cell>
-									<Table.Cell>
-										<Icon color="red" name="x" size="large" />
-									</Table.Cell>
-								</Table.Row>
-								<Table.Row>
-									<Table.Cell>Cell</Table.Cell>
-									<Table.Cell>Cell</Table.Cell>
-									<Table.Cell>
-										<Icon color="green" name="checkmark" size="large" />
-									</Table.Cell>
-									<Table.Cell>
-										<Icon color="red" name="x" size="large" />
-									</Table.Cell>
-								</Table.Row>
-								<Table.Row>
-									<Table.Cell>Cell</Table.Cell>
-									<Table.Cell>Cell</Table.Cell>
-									<Table.Cell>
-										<Icon color="green" name="checkmark" size="large" />
-									</Table.Cell>
-									<Table.Cell>
-										<Icon color="red" name="x" size="large" />
-									</Table.Cell>
-								</Table.Row>
-							</Table.Body>
-						</Table>
 						<Divider
 							id="services"
-							as="h2"
+							as="h1"
 							className="header"
 							horizontal
 							style={{
-								margin: "3em 0em",
+								margin: "2em 0em",
 								textTransform: "uppercase",
 								color: "#2185d0"
 							}}>
 							<a>Services</a>
 						</Divider>
-						<Header
-							as="h3"
-							style={{
-								fontSize: "2em",
-								textTransform: "uppercase",
-								color: "#2185d0"
-							}}>
-							We Provide The Following Services
-						</Header>
-						<p style={{ fontSize: "1.33em" }}>
-							A little something about your awesome services...
-						</p>
-						<Divider
-							id="blog"
-							as="h2"
-							className="header"
-							horizontal
-							style={{
-								margin: "3em 0em",
-								textTransform: "uppercase",
-								color: "#2185d0"
-							}}>
-							<a href="#">Blog</a>
-						</Divider>
-						<Blog />
+
+
+							<Grid divided inverted stackable>
+								<Grid.Row>
+									<Grid.Column width={8}>
+										<List link style={{"display":"flex","flexDirection":"column","alignItems":"center", "fontSize": "1.5rem"}}>
+											<List.Item as="a">Cleaning</List.Item>
+											<List.Item as="a">Exams</List.Item>
+											<List.Item as="a">Fillings</List.Item>
+											<List.Item as="a">Pediatric Dentistry</List.Item>
+										</List>
+									</Grid.Column>
+									<Grid.Column width={8}>
+										<List link style={{"display":"flex","flexDirection":"column","alignItems":"center", "fontSize": "1.5rem"}}>
+											<List.Item as="a">Crowns</List.Item>
+											<List.Item as="a">Implants</List.Item>
+											<List.Item as="a">Extractions</List.Item>
+											<List.Item as="a">Call for more services</List.Item>
+										</List>
+									</Grid.Column>
+								</Grid.Row>
+							</Grid>
+
 					</Container>
 				</Segment>
 				<Container fluid className="local" id="find-us">
@@ -454,29 +391,50 @@ export default class LandingPage extends Component {
 						</Grid.Row>
 					</Grid>
 				</Container>
+				<Segment style={{ padding: "4em 0" }} vertical id="staff">
+					<Grid celled="internally" columns="equal" stackable centered>
+						<Grid.Row textAlign="center">
+							<Grid.Column width={12}>
+								<Staff />
+							</Grid.Column>
+						</Grid.Row>
+					</Grid>
+				</Segment>
+				<Segment style={{padding: "4em 0"}} vertical id="blog">
+				<Container>
+				<Divider
+					id="blog"
+					as="h2"
+					className="header"
+					horizontal
+					style={{
+						margin: "3em 0em",
+						textTransform: "uppercase",
+						color: "#2185d0"
+					}}>
+					<a href="#">Blog</a>
+				</Divider>
+				<Blog />
+				</Container>
+				</Segment>
 				<Segment inverted vertical style={{ padding: "5em 0em" }}>
 					<Container>
 						<Grid divided inverted stackable>
 							<Grid.Row>
-								<Grid.Column width={3}>
-									<Header inverted as="h4" content="Social" />
-									<List link inverted>
-										<List.Item as="a">Facebook</List.Item>
-										<List.Item as="a" id="staff">Instagram</List.Item>
-										<List.Item as="a">LinkedIn</List.Item>
-									</List>
-								</Grid.Column>
-								<Grid.Column width={3}>
+								<Grid.Column width={5}>
 									<Header inverted as="h4" content="Services" />
 									<List link inverted>
 										<List.Item as="a">Cleaning</List.Item>
-										<List.Item as="a">Crowns</List.Item>
+										<List.Item as="a">Exams</List.Item>
 										<List.Item as="a">Fillings</List.Item>
-										<List.Item as="a">Full Service</List.Item>
+										<List.Item as="a">Crowns</List.Item>
+										<List.Item as="a">Implants</List.Item>
+										<List.Item as="a">Extractions</List.Item>
+										<List.Item as="a">Pediatric Dentistry</List.Item>
 										<List.Item as="a">Call for more services</List.Item>
 									</List>
 								</Grid.Column>
-								<Grid.Column width={7}>
+								<Grid.Column width={6}>
 									<Header as="h4" inverted>
 										Contact & Patient Information
 									</Header>
@@ -486,10 +444,18 @@ export default class LandingPage extends Component {
 										<List.Item as="a">Patient Form</List.Item>
 									</List>
 								</Grid.Column>
+								<Grid.Column width={5}>
+									<Header inverted as="h4" content="Social" />
+									<List link inverted>
+										<List.Item as="a" href="https://www.facebook.com/pinestdentalsc/" target="_blank">Facebook</List.Item>
+										<List.Item as="a" href="https://www.instagram.com/pinestdentalsc/" target="_blnak">Instagram</List.Item>
+									</List>
+								</Grid.Column>
 							</Grid.Row>
 						</Grid>
 					</Container>
 				</Segment>
+
 			</ResponsiveContainer>
 		);
 	}
