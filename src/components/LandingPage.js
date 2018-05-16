@@ -1,5 +1,5 @@
-import PropTypes from "prop-types";
-import React, { Component } from "react";
+import PropTypes from 'prop-types';
+import React, { Component } from 'react';
 import {
 	Button,
 	Container,
@@ -17,12 +17,12 @@ import {
 	Label,
 	Table,
 	Item
-} from "semantic-ui-react";
-import Blog from "../components/Blog.js";
-import Local from "../components/Local.js";
-import Staff from "../components/Staff.js";
-import DoctorImg from "../images/pinestdentaloffice-1.jpg";
-import gapi from "gapi-client";
+} from 'semantic-ui-react';
+import Blog from '../components/Blog.js';
+import Local from '../components/Local.js';
+import Staff from '../components/Staff.js';
+import DoctorImg from '../images/pinestdentaloffice-1.jpg';
+import gapi from 'gapi-client';
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -33,11 +33,13 @@ const HomepageHeading = ({ mobile }) => (
 		<Header
 			inverted
 			style={{
-				fontSize: mobile ? "2em" : "4em",
-				fontWeight: "normal",
+				fontSize: mobile ? '2em' : '4em',
+				fontWeight: 'normal',
 				marginBottom: 0,
-				textTransform: "uppercase",
-				padding: "30px 0"
+				textTransform: 'uppercase',
+				padding: '30px 0',
+				display: 'flex',
+				justifyContent: 'center'
 			}}
 			as="h1">
 			Pine Street Dental
@@ -81,10 +83,10 @@ class DesktopContainer extends Component {
 					<Segment
 						inverted
 						textAlign="center"
-						style={{ maxHeight: 950, padding: "1em 0em" }}
+						style={{ maxHeight: 950, padding: '1em 0em' }}
 						className="staff-background">
 						<Menu
-							fixed={fixed ? "top" : null}
+							fixed={fixed ? 'top' : null}
 							inverted={!fixed}
 							pointing={!fixed}
 							secondary={!fixed}
@@ -112,7 +114,7 @@ class DesktopContainer extends Component {
 										href="#find-us"
 										inverted={!fixed}
 										primary={fixed}
-										style={{ marginLeft: "0.5em" }}>
+										style={{ marginLeft: '0.5em' }}>
 										Call Us
 									</Button>
 									<Button
@@ -121,7 +123,7 @@ class DesktopContainer extends Component {
 										target="_blank"
 										inverted={!fixed}
 										primary={fixed}
-										style={{ marginLeft: "0.5em" }}>
+										style={{ marginLeft: '0.5em' }}>
 										Facebook
 									</Button>
 								</Menu.Item>
@@ -153,9 +155,9 @@ class MobileContainer extends Component {
 
 		return (
 			<Responsive {...Responsive.onlyMobile}>
-				<Sidebar.Pushable style={{position: "fixed"}}>
+				<Sidebar.Pushable style={{ position: 'fixed' }}>
 					<Sidebar
-					style={{padding: "15px 0 0 15px"}}
+						style={{ padding: '15px 0 0 15px' }}
 						as={Menu}
 						animation="uncover"
 						inverted
@@ -173,10 +175,16 @@ class MobileContainer extends Component {
 						<Menu.Item as="a" href="#social">
 							Social
 						</Menu.Item>
-						<Menu.Item as="a" href="https://www.facebook.com/pinestdentalsc/" target="_blank">
+						<Menu.Item
+							as="a"
+							href="https://www.facebook.com/pinestdentalsc/"
+							target="_blank">
 							Facebook
 						</Menu.Item>
-						<Menu.Item as="a" href="https://www.instagram.com/pinestdentalsc/" target="_blank">
+						<Menu.Item
+							as="a"
+							href="https://www.instagram.com/pinestdentalsc/"
+							target="_blank">
 							Instagram
 						</Menu.Item>
 						<Menu.Item as="a" href="#find-us" primary>
@@ -187,11 +195,11 @@ class MobileContainer extends Component {
 					<Sidebar.Pusher
 						dimmed={sidebarOpened}
 						onClick={this.handleToggle}
-						style={{ minHeight: "100vh"}}>
+						style={{ minHeight: '100vh' }}>
 						<Segment
 							inverted
 							textAlign="center"
-							style={{ minHeight: 550, padding: "1em 0em" }}
+							style={{ minHeight: 550, padding: '1em 0em' }}
 							vertical
 							className="staff-background">
 							<Container>
@@ -208,7 +216,7 @@ class MobileContainer extends Component {
 										<Button as="a" inverted>
 											Contact Us
 										</Button>
-										<Button as="a" inverted style={{ marginLeft: "0.5em" }}>
+										<Button as="a" inverted style={{ marginLeft: '0.5em' }}>
 											Call Us
 										</Button>
 									</Menu.Item>
@@ -248,13 +256,13 @@ export default class LandingPage extends Component {
 		};
 	}
 	componentDidMount() {
-		let url = "https://yelp-proxy-server.herokuapp.com/pinestreetdentalsc";
+		let url = 'https://yelp-proxy-server.herokuapp.com/pinestreetdentalsc';
 		let self = this;
 
 		fetch(url)
 			.then(function(response) {
 				if (response.status >= 400) {
-					console.log("error", response);
+					console.log('error', response);
 				}
 				return response.json();
 			})
@@ -276,43 +284,40 @@ export default class LandingPage extends Component {
 		return (
 			<ResponsiveContainer>
 				<Segment vertical>
-					<Grid
-					stackable
-					verticalAlign="middle"
-					>
-						<Grid.Row style={{
-							"backgroundImage": "url(http://www.ourupstatesc.info/myimages/hub-bub_banner.jpg)",
-							"height": "500px",
-							"backgroundSize": "cover",
-							"padding": "0"
-						}}>
-							<Grid.Column
-							width={7}
+					<Grid stackable verticalAlign="middle">
+						<Grid.Row
 							style={{
-								"background": "rgba(255, 255, 255, 0.75)",
-							  "height": "100%",
-							  "display": "flex",
-							  "justifyContent": "center",
-							  "alignItems": "center",
-							  "padding": "100px",
-							  "textAlign": "center"
-							}}
-							>
-
+								backgroundImage:
+									'url(http://www.ourupstatesc.info/myimages/hub-bub_banner.jpg)',
+								height: '500px',
+								backgroundSize: 'cover',
+								padding: '0'
+							}}>
+							<Grid.Column
+								width={7}
+								style={{
+									background: 'rgba(255, 255, 255, 0.75)',
+									height: '100%',
+									display: 'flex',
+									justifyContent: 'center',
+									alignItems: 'center',
+									padding: '100px',
+									textAlign: 'center'
+								}}>
 								<Header
 									as="h2"
 									style={{
-										textTransform: "uppercase",
-										color: "#2185d0"
+										textTransform: 'uppercase',
+										color: '#2185d0'
 									}}>
 									Pine Street Dental
 								</Header>
-								<p style={{ fontSize: "1.33em" }}>
+								<p style={{ fontSize: '1.33em' }}>
 									Providing general dentistry to the family and friends of
 									Spartanburg and the Upstate for over 40 years.
 								</p>
 							</Grid.Column>
-								{/*<Grid.Column floated="right" width={6}>
+							{/*<Grid.Column floated="right" width={6}>
 									<Image
 										bordered
 										rounded
@@ -325,110 +330,136 @@ export default class LandingPage extends Component {
 					</Grid>
 				</Segment>
 
-				<div style={{ padding: "0em", backgroundColor: "#add8e6", boxShadow: "rgba(34, 36, 38, 0.15) 0px 7px 10px" }}>
+				<div
+					style={{
+						padding: '0em',
+						backgroundColor: '#add8e6',
+						boxShadow: 'rgba(34, 36, 38, 0.15) 0px 7px 10px'
+					}}>
 					<Grid celled="internally" columns="equal" stackable>
 						<Grid.Row textAlign="center" centered>
 							<Grid.Column
 								width={4}
-								style={{ paddingBottom: "5em", paddingTop: "5em", display: "flex", alignItems: "center" }}>
+								style={{
+									paddingBottom: '5em',
+									paddingTop: '5em',
+									display: 'flex',
+									alignItems: 'center'
+								}}>
 								{reviews[0] ? (
 									<Item.Group>
-										<Item style={{display: "flex", alignItems: "center", paddingLeft: "15px"}}>
+										<Item
+											style={{
+												display: 'flex',
+												alignItems: 'center',
+												paddingLeft: '15px'
+											}}>
 											<Item.Image
 												size="tiny"
 												src={reviews[0].profile_photo_url}
 											/>
 
-											<Item.Content style={{textAlign: "center"}}>
-												<Item.Description>
-													{reviews[0].text}
-												</Item.Description>
+											<Item.Content style={{ textAlign: 'center' }}>
+												<Item.Description>{reviews[0].text}</Item.Description>
 												<Item.Extra>{reviews[0].author_name}</Item.Extra>
 											</Item.Content>
 										</Item>
 									</Item.Group>
 								) : (
-									""
+									''
 								)}
 							</Grid.Column>
 							<Grid.Column
 								width={5}
-								style={{ paddingBottom: "5em", paddingTop: "5em",display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
+								style={{
+									paddingBottom: '5em',
+									paddingTop: '5em',
+									display: 'flex',
+									flexDirection: 'column',
+									justifyContent: 'space-between'
+								}}>
 								{reviews[1] ? (
 									<Item.Group>
-										<Item style={{display: "flex", alignItems: "center"}}>
+										<Item style={{ display: 'flex', alignItems: 'center' }}>
 											<Item.Image
 												size="tiny"
 												src={reviews[1].profile_photo_url}
 											/>
 
-											<Item.Content style={{textAlign: "center"}}>
-												<Item.Description>
-													{reviews[1].text}
-												</Item.Description>
+											<Item.Content style={{ textAlign: 'center' }}>
+												<Item.Description>{reviews[1].text}</Item.Description>
 												<Item.Extra>{reviews[1].author_name}</Item.Extra>
 											</Item.Content>
 										</Item>
-										<Divider/>
+										<Divider />
 
-										<Item style={{display: "flex", alignItems: "center"}}>
+										<Item style={{ display: 'flex', alignItems: 'center' }}>
 											<Item.Image
 												size="tiny"
 												src={reviews[2].profile_photo_url}
 											/>
-											<Item.Content style={{textAlign: "center"}}>
-												<Item.Description>
-													{reviews[2].text}
-												</Item.Description>
+											<Item.Content style={{ textAlign: 'center' }}>
+												<Item.Description>{reviews[2].text}</Item.Description>
 												<Item.Extra>{reviews[2].author_name}</Item.Extra>
 											</Item.Content>
 										</Item>
 									</Item.Group>
 								) : (
-									""
+									''
 								)}
 							</Grid.Column>
 						</Grid.Row>
 					</Grid>
 				</div>
-				<Segment style={{ padding: "5em 0em" }} vertical>
+				<Segment style={{ padding: '5em 0em' }} vertical>
 					<Container text>
-
 						<Divider
 							id="services"
 							as="h1"
 							className="header"
 							horizontal
 							style={{
-								margin: "2em 0em",
-								textTransform: "uppercase",
-								color: "#2185d0"
+								margin: '2em 0em',
+								textTransform: 'uppercase',
+								color: '#2185d0'
 							}}>
 							<a>Services</a>
 						</Divider>
 
-
-							<Grid divided inverted stackable>
-								<Grid.Row>
-									<Grid.Column width={8}>
-										<List link style={{"display":"flex","flexDirection":"column","alignItems":"center", "fontSize": "1.5rem"}}>
-											<List.Item as="a">Cleaning</List.Item>
-											<List.Item as="a">Exams</List.Item>
-											<List.Item as="a">Fillings</List.Item>
-											<List.Item as="a">Pediatric Dentistry</List.Item>
-										</List>
-									</Grid.Column>
-									<Grid.Column width={8}>
-										<List link style={{"display":"flex","flexDirection":"column","alignItems":"center", "fontSize": "1.5rem"}}>
-											<List.Item as="a">Crowns</List.Item>
-											<List.Item as="a">Implants</List.Item>
-											<List.Item as="a">Extractions</List.Item>
-											<List.Item as="a">Call for more services</List.Item>
-										</List>
-									</Grid.Column>
-								</Grid.Row>
-							</Grid>
-
+						<Grid divided inverted stackable>
+							<Grid.Row>
+								<Grid.Column width={8}>
+									<List
+										link
+										style={{
+											display: 'flex',
+											flexDirection: 'column',
+											alignItems: 'center',
+											fontSize: '1.5rem'
+										}}>
+										<List.Item as="a">Cleaning</List.Item>
+										<List.Item as="a">Exams</List.Item>
+										<List.Item as="a">Fillings</List.Item>
+										<List.Item as="a">Pediatric Dentistry</List.Item>
+									</List>
+								</Grid.Column>
+								<Grid.Column width={8}>
+									<List
+										link
+										style={{
+											display: 'flex',
+											flexDirection: 'column',
+											alignItems: 'center',
+											fontSize: '1.5rem'
+										}}>
+										<List.Item as="a">Crowns</List.Item>
+										<List.Item as="a">Implants</List.Item>
+										<List.Item as="a">Extractions</List.Item>
+										<List.Item as="a">Call for more services</List.Item>
+									</List>
+								</Grid.Column>
+							</Grid.Row>
+						</Grid>
 					</Container>
 				</Segment>
 				<Container fluid className="local" id="find-us">
@@ -440,7 +471,7 @@ export default class LandingPage extends Component {
 						</Grid.Row>
 					</Grid>
 				</Container>
-				<Segment style={{ padding: "4em 0" }} vertical id="staff">
+				<Segment style={{ padding: '4em 0' }} vertical id="staff">
 					<Grid celled="internally" columns="equal" stackable centered>
 						<Grid.Row textAlign="center">
 							<Grid.Column width={12}>
@@ -449,34 +480,44 @@ export default class LandingPage extends Component {
 						</Grid.Row>
 					</Grid>
 				</Segment>
-				<Segment style={{padding: "4em 0"}} vertical id="blog">
-				<Container>
-				<Divider
-					id="blog"
-					as="h2"
-					className="header"
-					horizontal
-					style={{
-						margin: "3em 0em",
-						textTransform: "uppercase",
-						color: "#2185d0"
-					}}>
-					<a href="social">Social Media</a>
-				</Divider>
-				<Grid stackable id="social">
-					<Grid.Row>
-						<Grid.Column width={10}>
-							<Blog />
-						</Grid.Column>
-						<Grid.Column width={6}>
-							<iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpinestdentalsc%2F&tabs=timeline&width=400&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=527935110921167" style={{width:"100%", height:"800px", border: "none", overflow:"hidden"}} scrolling="no" frameborder="0" allowTransparency="true"></iframe>
-						</Grid.Column>
-					</Grid.Row>
-				</Grid>
-
-				</Container>
+				<Segment style={{ padding: '4em 0' }} vertical id="blog">
+					<Container>
+						<Divider
+							id="blog"
+							as="h2"
+							className="header"
+							horizontal
+							style={{
+								margin: '3em 0em',
+								textTransform: 'uppercase',
+								color: '#2185d0'
+							}}>
+							<a href="social">Social Media</a>
+						</Divider>
+						<Grid stackable id="social">
+							<Grid.Row>
+								<Grid.Column width={10}>
+									<Blog />
+								</Grid.Column>
+								<Grid.Column width={6}>
+									<iframe
+										src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpinestdentalsc%2F&tabs=timeline&width=400&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=527935110921167"
+										style={{
+											width: '100%',
+											height: '800px',
+											border: 'none',
+											overflow: 'hidden'
+										}}
+										scrolling="no"
+										frameborder="0"
+										allowTransparency="true"
+									/>
+								</Grid.Column>
+							</Grid.Row>
+						</Grid>
+					</Container>
 				</Segment>
-				<Segment inverted vertical style={{ padding: "5em 0em" }}>
+				<Segment inverted vertical style={{ padding: '5em 0em' }}>
 					<Container>
 						<Grid divided inverted stackable>
 							<Grid.Row>
@@ -499,22 +540,33 @@ export default class LandingPage extends Component {
 									</Header>
 									<List link inverted>
 										<List.Item as="a">(864) 582-5000</List.Item>
-										<List.Item as="a">364 S. Pine Street, Suite A-101, Spartanburg, SC 29302</List.Item>
+										<List.Item as="a">
+											364 S. Pine Street, Suite A-101, Spartanburg, SC 29302
+										</List.Item>
 										<List.Item as="a">Patient Form</List.Item>
 									</List>
 								</Grid.Column>
 								<Grid.Column width={5}>
 									<Header inverted as="h4" content="Social" />
 									<List link inverted>
-										<List.Item as="a" href="https://www.facebook.com/pinestdentalsc/" target="_blank">Facebook</List.Item>
-										<List.Item as="a" href="https://www.instagram.com/pinestdentalsc/" target="_blnak">Instagram</List.Item>
+										<List.Item
+											as="a"
+											href="https://www.facebook.com/pinestdentalsc/"
+											target="_blank">
+											Facebook
+										</List.Item>
+										<List.Item
+											as="a"
+											href="https://www.instagram.com/pinestdentalsc/"
+											target="_blnak">
+											Instagram
+										</List.Item>
 									</List>
 								</Grid.Column>
 							</Grid.Row>
 						</Grid>
 					</Container>
 				</Segment>
-
 			</ResponsiveContainer>
 		);
 	}
