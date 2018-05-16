@@ -4,6 +4,10 @@ body {
   font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
   color: rgba(0, 0, 0, 0.87); }
 
+#full-page-wrapper {
+  width: 100%;
+  overflow-x: hidden; }
+
 .App {
   text-align: center; }
 
