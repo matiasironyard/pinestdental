@@ -155,7 +155,7 @@ class MobileContainer extends Component {
 
 		return (
 			<Responsive {...Responsive.onlyMobile}>
-				<Sidebar.Pushable style={{ position: 'fixed' }}>
+				<Sidebar.Pushable>
 					<Sidebar
 						style={{ padding: '15px 0 0 15px' }}
 						as={Menu}
