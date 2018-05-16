@@ -1,8 +1,5 @@
 body {
-  margin: -15px;
-  padding: 0;
-  font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
-  color: rgba(0, 0, 0, 0.87); }
+  font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif; }
 
 #full-page-wrapper {
   width: 100%;
