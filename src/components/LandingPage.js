@@ -122,7 +122,7 @@ class DesktopContainer extends Component {
 										inverted={!fixed}
 										primary={fixed}
 										style={{ marginLeft: "0.5em" }}>
-										<Icon name='facebook' />
+										Facebook
 									</Button>
 								</Menu.Item>
 							</Container>
@@ -275,14 +275,33 @@ export default class LandingPage extends Component {
 
 		return (
 			<ResponsiveContainer>
-				<Segment style={{ padding: "4em 0em" }} vertical vertical>
-					<Grid container stackable verticalAlign="middle">
-						<Grid.Row>
-							<Grid.Column width={8}>
+				<Segment vertical>
+					<Grid
+					stackable
+					verticalAlign="middle"
+					>
+						<Grid.Row style={{
+							"backgroundImage": "url(http://www.ourupstatesc.info/myimages/hub-bub_banner.jpg)",
+							"height": "500px",
+							"backgroundSize": "cover",
+							"padding": "0"
+						}}>
+							<Grid.Column
+							width={7}
+							style={{
+								"background": "rgba(255, 255, 255, 0.75)",
+							  "height": "100%",
+							  "display": "flex",
+							  "justifyContent": "center",
+							  "alignItems": "center",
+							  "padding": "100px",
+							  "textAlign": "center"
+							}}
+							>
+
 								<Header
-									as="h3"
+									as="h2"
 									style={{
-										fontSize: "2em",
 										textTransform: "uppercase",
 										color: "#2185d0"
 									}}>
@@ -293,20 +312,20 @@ export default class LandingPage extends Component {
 									Spartanburg and the Upstate for over 40 years.
 								</p>
 							</Grid.Column>
-							<Grid.Column floated="right" width={6}>
-								<Image
-									bordered
-									rounded
-									fluid
-									style={{ objectFit: "cover" }}
-									src={DoctorImg}
-								/>
-							</Grid.Column>
+								{/*<Grid.Column floated="right" width={6}>
+									<Image
+										bordered
+										rounded
+										fluid
+										style={{ objectFit: "cover" }}
+										src={DoctorImg}
+									/>
+								</Grid.Column>*/}
 						</Grid.Row>
 					</Grid>
 				</Segment>
 
-				<Segment style={{ padding: "0em", backgroundColor: "#add8e6", boxShadow: "rgba(34, 36, 38, 0.15) 0px 7px 10px" }} vertical>
+				<div style={{ padding: "0em", backgroundColor: "#add8e6", boxShadow: "rgba(34, 36, 38, 0.15) 0px 7px 10px" }}>
 					<Grid celled="internally" columns="equal" stackable>
 						<Grid.Row textAlign="center" centered>
 							<Grid.Column
@@ -314,13 +333,13 @@ export default class LandingPage extends Component {
 								style={{ paddingBottom: "5em", paddingTop: "5em", display: "flex", alignItems: "center" }}>
 								{reviews[0] ? (
 									<Item.Group>
-										<Item style={{display: "flex", alignItems: "center"}}>
+										<Item style={{display: "flex", alignItems: "center", paddingLeft: "15px"}}>
 											<Item.Image
 												size="tiny"
 												src={reviews[0].profile_photo_url}
 											/>
 
-											<Item.Content>
+											<Item.Content style={{textAlign: "center"}}>
 												<Item.Description>
 													{reviews[0].text}
 												</Item.Description>
@@ -343,7 +362,7 @@ export default class LandingPage extends Component {
 												src={reviews[1].profile_photo_url}
 											/>
 
-											<Item.Content>
+											<Item.Content style={{textAlign: "center"}}>
 												<Item.Description>
 													{reviews[1].text}
 												</Item.Description>
@@ -357,7 +376,7 @@ export default class LandingPage extends Component {
 												size="tiny"
 												src={reviews[2].profile_photo_url}
 											/>
-											<Item.Content>
+											<Item.Content style={{textAlign: "center"}}>
 												<Item.Description>
 													{reviews[2].text}
 												</Item.Description>
@@ -371,8 +390,8 @@ export default class LandingPage extends Component {
 							</Grid.Column>
 						</Grid.Row>
 					</Grid>
-				</Segment>
-				<Segment style={{ padding: "8em 0em" }} vertical>
+				</div>
+				<Segment style={{ padding: "5em 0em" }} vertical>
 					<Container text>
 
 						<Divider

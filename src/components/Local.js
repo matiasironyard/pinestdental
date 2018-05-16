@@ -63,7 +63,6 @@ export default class Local extends Component {
 							</Divider>
 
 							<List
-								divided={true}
 								relaxed={true}
 								style={{ textAlign: 'center', fontSize: '1.2rem' }}>
 								<List.Item>

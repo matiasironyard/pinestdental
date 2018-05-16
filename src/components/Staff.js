@@ -6,23 +6,33 @@ export default class Staff extends Component {
 	render() {
 		let staff = StaffData().map(item => {
 			return (
-				<Card raised={true} key={item.key} style={{ width: '300px' }}>
-					<Image
-						src={item.img}
-						style={{
-							height: '300px',
-							width: '100%',
-							objectFit: 'cover'
-						}}
-					/>
+				<div>
+				<Image
+					src={item.img}
+					size='small' circular
+					style={{
+						"margin": "0px auto",
+						"width": "200px",
+						"borderRadius": "100%",
+						"height": "200px",
+						"objectFit": "cover"
+					}}
+				/>
+				<Card raised={true} key={item.key} style={{
+					"width": "300px",
+				  "border": "0 !important",
+				  "boxShadow": "none",
+				  "textAlign": "center"
+				}}>
 					<Card.Content>
 						<Card.Header>{item.name}</Card.Header>
 						<Card.Meta>
 							<span className="date">{item.position}</span>
 						</Card.Meta>
-						<Card.Description>{item.bio}</Card.Description>
+						{/*<Card.Description>{item.bio}</Card.Description>*/}
 					</Card.Content>
 				</Card>
+				</div>
 			);
 		});
 		return (
@@ -33,7 +43,7 @@ export default class Staff extends Component {
 						color="blue"
 						style={{
 							textTransform: 'uppercase',
-							paddingBottom: '20px',
+							paddingBottom: '40px',
 							textAlign: 'center'
 						}}>
 						Meet Our friendly Staff
