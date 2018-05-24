@@ -845,6 +845,21 @@ export default class LandingPage extends Component {
 											Instagram
 										</List.Item>
 									</List>
+									<Header inverted as="h4" content="Website" />
+									<List link inverted>
+										<List.Item
+											as="a"
+											href="http://wwww.matiasmariani.io"
+											target="_blank"
+										>
+											Matias Mariani
+										</List.Item>
+										<List.Item
+											as="a"
+										>
+											&reg; PineStDentalSC 2018
+										</List.Item>
+									</List>
 								</Grid.Column>
 							</Grid.Row>
 						</Grid>
