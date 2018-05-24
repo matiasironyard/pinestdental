@@ -30,10 +30,9 @@ export default class Map extends Component {
 						>
 							<Header as="h3" textAlign="left">
 								ADDRESS
-								<Header.Subheader style={{ fontSize: '1.2rem' }}>
-									{this.props.data.formatted_address}
-								</Header.Subheader>
 							</Header>
+              <p>364 S. Pine Street, Suite A-101</p>
+              <p>Spartanburg, SC 29302</p>
 						</a>
 					</Grid.Column>
 				</Grid.Row>
