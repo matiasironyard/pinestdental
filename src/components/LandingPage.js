@@ -109,6 +109,7 @@ class DesktopContainer extends Component {
 								<Menu.Item as="a" href="#social">
 									Social
 								</Menu.Item>
+								<Menu.Item as="a">Se Habla Español</Menu.Item>
 								<Menu.Item position="right">
 									<Button as="a" inverted={!fixed} href="#find-us">
 										Find Us
@@ -243,6 +244,7 @@ class MobileContainer extends Component {
 						>
 							Delta Dental Premier
 						</Menu.Item>
+						<Menu.Item as="a">Se Habla Español</Menu.Item>
 						<Menu.Item as="a" primary onClick={this.handleToggle}>
 							Close
 						</Menu.Item>
@@ -377,6 +379,7 @@ class TabletContainer extends Component {
 						>
 							Delta Dental Premier
 						</Menu.Item>
+						<Menu.Item as="a">Se Habla Español</Menu.Item>
 						<Menu.Item as="a" primary onClick={this.handleToggle}>
 							Close
 						</Menu.Item>
@@ -655,6 +658,7 @@ export default class LandingPage extends Component {
 										<List.Item>Exams</List.Item>
 										<List.Item>Fillings</List.Item>
 										<List.Item>Pediatric Dentistry</List.Item>
+										<List.Item>Teeth Whitening</List.Item>
 									</List>
 								</Grid.Column>
 								<Grid.Column width={8}>
@@ -671,36 +675,45 @@ export default class LandingPage extends Component {
 										<List.Item>Implants</List.Item>
 										<List.Item>Extractions</List.Item>
 										<List.Item>Call for more services</List.Item>
+										<List.Item>Se Habla Español</List.Item>
 									</List>
 								</Grid.Column>
 								<Grid.Column width={16} centered>
-								<Divider
-									id="services"
-									as="h2"
-									className="header"
-									horizontal
-									style={{
-										margin: '2em 0em',
-										textTransform: 'uppercase',
-										color: '#2185d0'
-									}}
-								>
-									<a>Emergencies</a>
-								</Divider>
-								<List style={{
-										display: 'flex',
-										flexDirection: 'column',
-										alignItems: 'center',
-										fontSize: '1.5rem'
-									}}>
+									<Divider
+										id="services"
+										as="h2"
+										className="header"
+										horizontal
+										style={{
+											margin: '2em 0em',
+											textTransform: 'uppercase',
+											color: '#2185d0'
+										}}
+									>
+										<a>Emergencies</a>
+									</Divider>
+									<List
+										style={{
+											display: 'flex',
+											flexDirection: 'column',
+											alignItems: 'center',
+											fontSize: '1.5rem'
+										}}
+									>
 										<List.Item as="a" href="tel:-864-582-5000">
-										<List.Icon name='phone' size='medium' verticalAlign='middle' color="blue"/>
-										<List.Content>
-										Call Us For Dental Emergencies
-										</List.Content>
-
-</List.Item>
-										<List.Item style={{fontSize: "1rem", fontWeight: "bold"}}>For any other type of emergeny, call 911.</List.Item>
+											<List.Icon
+												name="phone"
+												size="medium"
+												verticalAlign="middle"
+												color="blue"
+											/>
+											<List.Content>
+												Call Us For Dental Emergencies
+											</List.Content>
+										</List.Item>
+										<List.Item style={{ fontSize: '1rem', fontWeight: 'bold' }}>
+											For any other type of emergeny, call 911.
+										</List.Item>
 									</List>
 								</Grid.Column>
 							</Grid.Row>
@@ -854,11 +867,7 @@ export default class LandingPage extends Component {
 										>
 											Matias Mariani
 										</List.Item>
-										<List.Item
-											as="a"
-										>
-											&reg; PineStDentalSC 2018
-										</List.Item>
+										<List.Item as="a">&reg; PineStDentalSC 2018</List.Item>
 									</List>
 								</Grid.Column>
 							</Grid.Row>

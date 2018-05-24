@@ -2,7 +2,7 @@ import patti from "../images/pinestdentalstaff-2.jpg";
 import kathey from "../images/pinestdentalstaff-3.jpg";
 import debbie from "../images/pinestdentalstaff-4.jpg";
 import tanya from "../images/pinestdentalstaff-5.jpg";
-import omar from "../images/doctorfigueroa-1.jpg";
+import omar from "../images/doctorfigueroa-4.jpg";
 export default function() {
   return [
     {
@@ -14,7 +14,7 @@ export default function() {
       key: 1
     },
     {
-      name: "Patti Lacey",
+      name: "Patti Lacey, RDH",
       position: "Hygenist",
       bio:
         "I was born and raised in Spartanburg, SC. I have been married for twenty-seven years and we have three children and a grandson. My passion for dentistry started in the late 70’s and I completely fell in love with it. I have worked in the same practice, under different ownership, over 41 years and I enjoy it as much as the first day. I enjoy shopping, making blankets, attending church, walking, a good glass of wine, grilling and spending time with my family.",
