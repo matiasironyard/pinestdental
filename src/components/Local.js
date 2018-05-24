@@ -28,7 +28,7 @@ export default class Local extends Component {
 			data = this.props.data.result;
 		}
 		return (
-			<Grid stackable columns={2}  className="space">
+			<Grid stackable columns={2} className="space">
 				<Grid.Column width={10}>
 					<Segment>
 						<Map data={data}/>
@@ -46,14 +46,13 @@ export default class Local extends Component {
 							</Divider>
 							<Header as="h3" icon>
 								<Icon name="phone" color="blue" />
-								Phone Number
 								<Header.Subheader style={{padding: "15px 0"}}>
 									<a href="tel:-864-582-5000" style={{fontSize: "2rem"}}>{phoneNumber}</a>
 								</Header.Subheader>
 							</Header>
 						</Container>
 
-						<Container>
+						<Container textAlign="center">
 							<Divider
 								as="h2"
 								className="header"
@@ -61,7 +60,9 @@ export default class Local extends Component {
 								style={{ margin: '1em 0em', textTransform: 'uppercase' }}>
 								<a href="#">Office Hours</a>
 							</Divider>
-
+							<Header as="h3" icon centered>
+								<Icon name="calendar" color="blue" />
+							</Header>
 							<List
 								relaxed={true}
 								style={{ textAlign: 'center', fontSize: '1.2rem' }}>
@@ -69,7 +70,10 @@ export default class Local extends Component {
 									<List.Content>
 										<List.Header as="a">Monday</List.Header>
 										<List.Description as="a">
-											8:30 a.m - 1 p.m / 2 p.m - 5 p.m
+											8:30am - 1pm
+										</List.Description>
+										<List.Description as="a">
+											2pm - 5pm
 										</List.Description>
 									</List.Content>
 								</List.Item>
@@ -77,7 +81,10 @@ export default class Local extends Component {
 									<List.Content>
 										<List.Header as="a">Tuesday</List.Header>
 										<List.Description as="a">
-											8:30 a.m - 1 p.m / 2 p.m - 5 p.m
+											8:30am - 1pm
+										</List.Description>
+										<List.Description as="a">
+											2pm - 5pm
 										</List.Description>
 									</List.Content>
 								</List.Item>
@@ -85,7 +92,10 @@ export default class Local extends Component {
 									<List.Content>
 										<List.Header as="a">Wednesday</List.Header>
 										<List.Description as="a">
-											8:30 a.m - 1 p.m / 2 p.m - 5 p.m
+											8:30am - 1pm
+										</List.Description>
+										<List.Description as="a">
+											2pm - 5pm
 										</List.Description>
 									</List.Content>
 								</List.Item>
@@ -93,7 +103,10 @@ export default class Local extends Component {
 									<List.Content>
 										<List.Header as="a">Thursday</List.Header>
 										<List.Description as="a">
-											8:30 a.m - 1 p.m / 2 p.m - 4 p.m
+											8:30am - 1pm
+										</List.Description>
+										<List.Description as="a">
+											2pm - 4pm
 										</List.Description>
 									</List.Content>
 								</List.Item>
