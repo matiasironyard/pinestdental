@@ -527,7 +527,8 @@ export default class LandingPage extends Component {
 										rounded
 										fluid
 										style={{ objectFit: "cover" }}
-										src={OfficeDoor}
+									src={OfficeDoor}
+									alt="Pinestreet Dental Spartanburg Dentist Near Me"
 									/>
 								</Grid.Column>
 						</Grid.Row>
@@ -568,6 +569,7 @@ export default class LandingPage extends Component {
 											<Item.Image
 												size="tiny"
 												src={reviews[0].profile_photo_url}
+												alt="Pinestreet Dental Spartanburg Dentist Near Me"
 											/>
 
 											<Item.Content style={{ textAlign: 'center' }}>
@@ -596,6 +598,7 @@ export default class LandingPage extends Component {
 											<Item.Image
 												size="tiny"
 												src={reviews[1].profile_photo_url}
+												alt="Pinestreet Dental Spartanburg Dentist Near Me"
 											/>
 
 											<Item.Content style={{ textAlign: 'center' }}>
@@ -609,6 +612,7 @@ export default class LandingPage extends Component {
 											<Item.Image
 												size="tiny"
 												src={reviews[2].profile_photo_url}
+												alt="Pinestreet Dental Spartanburg Dentist Near Me"
 											/>
 											<Item.Content style={{ textAlign: 'center' }}>
 												<Item.Description>{reviews[2].text}</Item.Description>

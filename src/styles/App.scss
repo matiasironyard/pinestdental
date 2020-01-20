@@ -1,21 +1,21 @@
 body {
-  font-family: 'Roboto', GillSans, Calibri, Trebuchet, sans-serif;
+  font-family: "Roboto", GillSans, Calibri, Trebuchet, sans-serif;
 }
-#full-page-wrapper{
+#full-page-wrapper {
   width: 100%;
-  overflow-x: hidden
+  overflow-x: hidden;
 }
 .App {
   text-align: center;
 }
 
 .headings {
-  color: #0067B1;
+  color: #0067b1;
 }
 
 .featurette {
   .sub-headings {
-    color: #0067B1;
+    color: #0067b1;
   }
 }
 
@@ -59,7 +59,6 @@ body {
     box-shadow: 0 2px 1px rgba(0, 0, 0, 0.45);
   }
 
-
   .services {
     padding: 30px 15px;
     margin: 5px;
@@ -73,7 +72,7 @@ body {
   }
 
   .sub-headings {
-    color: #0067B1;
+    color: #0067b1;
   }
 }
 
@@ -164,17 +163,16 @@ h1 {
 
 /*LandingPage*/
 
-.staff-background{
-  background-image: url("../images/pinestdentalstaff-1.jpg")!important;
+.staff-background {
+  background-image: url("../images/officeExterior.jpg") !important;
   background-size: cover !important;
   background-repeat: none !important;
-  background-position: top !important;
-  min-height: 950px;
+  height: 600px;
 }
-.top-nav{
+.top-nav {
   background-color: #2185d0 !important;
 }
-.heading-text{
+.heading-text {
   position: absolute !important;
   bottom: 0 !important;
   right: 30% !important;
