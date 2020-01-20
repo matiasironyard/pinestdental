@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Header, Grid, Image, Divider } from "semantic-ui-react";
-import picture from "../images/officeExterior.png";
+import picture from "../images/officeExterior.jpg";
 
 export default class Map extends Component {
   render() {
