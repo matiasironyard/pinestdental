@@ -14,15 +14,12 @@ import {
 	Segment,
 	Sidebar,
 	Visibility,
-	Label,
-	Table,
 	Item
 } from 'semantic-ui-react';
 import Blog from '../components/Blog.js';
 import Local from '../components/Local.js';
 import Staff from '../components/Staff.js';
-import DoctorImg from '../images/pinestdentaloffice-1.jpg';
-import gapi from 'gapi-client';
+import OfficeDoor from '../images/pinestdentaloffice-6.jpg';
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -119,7 +116,6 @@ class DesktopContainer extends Component {
 										inverted={!fixed}
 										primary={fixed}
 										href="tel:-864-582-5000"
-										inverted
 										style={{ marginLeft: '0.5em' }}
 									>
 										582-5000
@@ -131,7 +127,6 @@ class DesktopContainer extends Component {
 										inverted={!fixed}
 										primary={fixed}
 										style={{ marginLeft: '0.5em' }}
-										inverted
 									>
 										Facebook
 									</Button>
@@ -141,7 +136,6 @@ class DesktopContainer extends Component {
 										target="_blank"
 										inverted={!fixed}
 										primary={fixed}
-										inverted
 										style={{ marginLeft: '0.5em' }}
 									>
 										Forms
@@ -474,12 +468,11 @@ export default class LandingPage extends Component {
 	}
 
 	render() {
-		let { data, blog } = this.state;
+		let { data } = this.state;
 		let reviews = [];
-		let blogPost = null;
 		if (data != null) {
 			data.result.reviews.map(item => {
-				reviews.push(item);
+				return reviews.push(item);
 			});
 		}
 
@@ -528,15 +521,15 @@ export default class LandingPage extends Component {
 									Spartanburg y el norte del estado por más de 40 años.
 								</p>
 							</Grid.Column>
-							{/*<Grid.Column floated="right" width={6}>
+							<Grid.Column floated="right" width={6}>
 									<Image
 										bordered
 										rounded
 										fluid
 										style={{ objectFit: "cover" }}
-										src={DoctorImg}
+										src={OfficeDoor}
 									/>
-								</Grid.Column>*/}
+								</Grid.Column>
 						</Grid.Row>
 					</Grid>
 				</Segment>
@@ -561,6 +554,10 @@ export default class LandingPage extends Component {
 							>
 								{reviews[0] ? (
 									<Item.Group>
+										<Item>
+											<Header as="h2" content="TESTIMONIALS" />
+
+										</Item>
 										<Item
 											style={{
 												display: 'flex',
@@ -678,44 +675,7 @@ export default class LandingPage extends Component {
 										<List.Item>Se Habla Español</List.Item>
 									</List>
 								</Grid.Column>
-								<Grid.Column width={16} centered>
-									<Divider
-										id="services"
-										as="h2"
-										className="header"
-										horizontal
-										style={{
-											margin: '2em 0em',
-											textTransform: 'uppercase',
-											color: '#2185d0'
-										}}
-									>
-										<a>Emergencies</a>
-									</Divider>
-									<List
-										style={{
-											display: 'flex',
-											flexDirection: 'column',
-											alignItems: 'center',
-											fontSize: '1.5rem'
-										}}
-									>
-										<List.Item as="a" href="tel:-864-582-5000">
-											<List.Icon
-												name="phone"
-												size="medium"
-												verticalAlign="middle"
-												color="blue"
-											/>
-											<List.Content>
-												Call Us For Dental Emergencies
-											</List.Content>
-										</List.Item>
-										<List.Item style={{ fontSize: '1rem', fontWeight: 'bold' }}>
-											For any other type of emergeny, call 911.
-										</List.Item>
-									</List>
-								</Grid.Column>
+								
 							</Grid.Row>
 						</Grid>
 					</Container>
@@ -764,6 +724,7 @@ export default class LandingPage extends Component {
 								</Grid.Column>
 								<Grid.Column width={8}>
 									<iframe
+										title="pinest-denal-facebook"
 										src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpinestdentalsc%2F&tabs=timeline&width=500&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=527935110921167"
 										style={{
 											width: '100%',

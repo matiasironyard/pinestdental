@@ -1,6 +1,5 @@
 import patti from "../images/pinestdentalstaff-2.jpg";
 import kathey from "../images/pinestdentalstaff-3.jpg";
-import debbie from "../images/pinestdentalstaff-4.jpg";
 import tanya from "../images/pinestdentalstaff-5.jpg";
 import omar from "../images/doctorfigueroa-4.jpg";
 export default function() {
@@ -30,19 +29,12 @@ export default function() {
       key: 3
     },
     {
-      name: "Debbie Manuel",
-      position: "Dental Assistant",
-      bio:
-        "I absolutely love what I do and I adore my patients. I have two daughters, three grandchildren, a wonderful son in law and two kitties. My best friend in the whole world is my twin sister who is also a dental assistant. My absolute favorite place in the whole world is Folly Beach; I call it my happy place. I thank God everyday for blessing me with the greatest family and friends and for giving me everything I have.",
-      img: `${debbie}`,
-      key: 4
-    },
-    {
       name: "Dr. Omar Figueroa, DDS",
       position: "Dentist",
-      bio: "I graduated from Spartanburg High School in 2003 and USC Upstate in 2007. Completed Dental School at The Ohio State University in 2015, Go Buckeyes!  Andrea and I have two boys, Luca and Myles. In 2017 the office was renamed “Pine Street Dental”. I am happy to report that staff, location, hours, and phone number all remain the same. It is an honor to continue the practice of David Dedmon, DMD. A practice that has been part of the Spartanburg community for over 30 years.",
+      bio:
+        "I graduated from Spartanburg High School in 2003 and USC Upstate in 2007. Completed Dental School at The Ohio State University in 2015, Go Buckeyes!  Andrea and I have two boys, Luca and Myles. In 2017 the office was renamed “Pine Street Dental”. I am happy to report that staff, location, hours, and phone number all remain the same. It is an honor to continue the practice of David Dedmon, DMD. A practice that has been part of the Spartanburg community for over 30 years.",
       img: `${omar}`,
-      key: 5
+      key: 4
     }
   ];
 }
