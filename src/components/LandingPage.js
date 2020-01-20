@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import PropTypes from "prop-types";
+import React, { Component } from "react";
 import {
 	Button,
 	Container,
@@ -15,30 +15,30 @@ import {
 	Sidebar,
 	Visibility,
 	Item
-} from 'semantic-ui-react';
-import Blog from '../components/Blog.js';
-import Local from '../components/Local.js';
-import Staff from '../components/Staff.js';
-import OfficeDoor from '../images/pinestdentaloffice-6.jpg';
+} from "semantic-ui-react";
+import Blog from "../components/Blog.js";
+import Local from "../components/Local.js";
+import Staff from "../components/Staff.js";
+import OfficeDoor from "../images/pinestdentaloffice-6.jpg";
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
  * such things.
  */
 const HomepageHeading = ({ mobile }) => (
-	<Container text className="heading-text">
+	<Container text className='heading-text'>
 		<Header
 			inverted
 			style={{
-				fontSize: mobile ? '2em' : '4em',
-				fontWeight: 'normal',
+				fontSize: mobile ? "2em" : "4em",
+				fontWeight: "normal",
 				marginBottom: 0,
-				textTransform: 'uppercase',
-				padding: '30px 0',
-				display: 'flex',
-				justifyContent: 'center'
+				textTransform: "uppercase",
+				padding: "30px 0",
+				display: "flex",
+				justifyContent: "center"
 			}}
-			as="h1"
+			as='h1'
 		>
 			Pine Street Dental
 		</Header>
@@ -81,62 +81,62 @@ class DesktopContainer extends Component {
 				>
 					<Segment
 						inverted
-						textAlign="center"
-						style={{ maxHeight: 950, padding: '1em 0em' }}
-						className="staff-background"
+						textAlign='center'
+						style={{ maxHeight: 950, padding: "1em 0em" }}
+						className='staff-background'
 					>
 						<Menu
-							fixed={fixed ? 'top' : null}
+							fixed={fixed ? "top" : null}
 							inverted={!fixed}
 							pointing={!fixed}
 							secondary={!fixed}
-							size="large"
-							className="top-nav"
+							size='large'
+							className='top-nav'
 						>
 							<Container>
-								<Menu.Item as="a" href="#" active>
+								<Menu.Item as='a' href='#' active>
 									Home
 								</Menu.Item>
-								<Menu.Item as="a" href="#staff">
+								<Menu.Item as='a' href='#staff'>
 									Staff
 								</Menu.Item>
-								<Menu.Item as="a" href="#services">
+								<Menu.Item as='a' href='#services'>
 									Services
 								</Menu.Item>
-								<Menu.Item as="a" href="#social">
+								<Menu.Item as='a' href='#social'>
 									Social
 								</Menu.Item>
-								<Menu.Item as="a">Se Habla Español</Menu.Item>
-								<Menu.Item position="right">
-									<Button as="a" inverted={!fixed} href="#find-us">
+								<Menu.Item as='a'>Se Habla Español</Menu.Item>
+								<Menu.Item position='right'>
+									<Button as='a' inverted={!fixed} href='#find-us'>
 										Find Us
 									</Button>
 									<Button
-										as="a"
+										as='a'
 										inverted={!fixed}
 										primary={fixed}
-										href="tel:-864-582-5000"
-										style={{ marginLeft: '0.5em' }}
+										href='tel:-864-582-5000'
+										style={{ marginLeft: "0.5em" }}
 									>
 										582-5000
 									</Button>
 									<Button
-										as="a"
-										href="https://www.facebook.com/pinestdentalsc/"
-										target="_blank"
+										as='a'
+										href='https://www.facebook.com/pinestdentalsc/'
+										target='_blank'
 										inverted={!fixed}
 										primary={fixed}
-										style={{ marginLeft: '0.5em' }}
+										style={{ marginLeft: "0.5em" }}
 									>
 										Facebook
 									</Button>
 									<Button
-										as="a"
-										href="https://drive.google.com/drive/folders/1eG2DDF_sEuRfNO4vIPYP1Rt8vad8-K00?usp=sharing"
-										target="_blank"
+										as='a'
+										href='https://drive.google.com/drive/folders/1eG2DDF_sEuRfNO4vIPYP1Rt8vad8-K00?usp=sharing'
+										target='_blank'
 										inverted={!fixed}
 										primary={fixed}
-										style={{ marginLeft: '0.5em' }}
+										style={{ marginLeft: "0.5em" }}
 									>
 										Forms
 									</Button>
@@ -171,107 +171,107 @@ class MobileContainer extends Component {
 			<Responsive {...Responsive.onlyMobile}>
 				<Sidebar.Pushable>
 					<Sidebar
-						style={{ padding: '15px 0 0 15px' }}
+						style={{ padding: "15px 0 0 15px" }}
 						as={Menu}
-						animation="uncover"
+						animation='uncover'
 						inverted
 						vertical
 						visible={sidebarOpened}
 					>
-						<Menu.Item as="a" href="#staff" onClick={this.handleToggle}>
+						<Menu.Item as='a' href='#staff' onClick={this.handleToggle}>
 							Staff
 						</Menu.Item>
-						<Menu.Item as="a" href="#services" onClick={this.handleToggle}>
+						<Menu.Item as='a' href='#services' onClick={this.handleToggle}>
 							Services
 						</Menu.Item>
-						<Menu.Item as="a" href="#social" onClick={this.handleToggle}>
+						<Menu.Item as='a' href='#social' onClick={this.handleToggle}>
 							Social
 						</Menu.Item>
 						<Menu.Item
 							onClick={this.handleToggle}
-							as="a"
-							href="https://www.facebook.com/pinestdentalsc/"
-							target="_blank"
+							as='a'
+							href='https://www.facebook.com/pinestdentalsc/'
+							target='_blank'
 						>
 							Facebook
 						</Menu.Item>
 						<Menu.Item
 							onClick={this.handleToggle}
-							as="a"
-							href="https://www.instagram.com/pinestdentalsc/"
-							target="_blank"
+							as='a'
+							href='https://www.instagram.com/pinestdentalsc/'
+							target='_blank'
 						>
 							Instagram
 						</Menu.Item>
 						<Menu.Item
-							as="a"
-							href="#find-us"
+							as='a'
+							href='#find-us'
 							primary
 							onClick={this.handleToggle}
 						>
 							Contact & Find Us
 						</Menu.Item>
 						<Menu.Item
-							as="a"
-							href="https://drive.google.com/drive/folders/1eG2DDF_sEuRfNO4vIPYP1Rt8vad8-K00?usp=sharing"
-							target="_blank"
+							as='a'
+							href='https://drive.google.com/drive/folders/1eG2DDF_sEuRfNO4vIPYP1Rt8vad8-K00?usp=sharing'
+							target='_blank'
 							primary
 							onClick={this.handleToggle}
 						>
 							Patient Forms
 						</Menu.Item>
 						<Menu.Item
-							as="a"
-							href="https://www.cigna.com/"
-							target="_blank"
+							as='a'
+							href='https://www.cigna.com/'
+							target='_blank'
 							primary
 							onClick={this.handleToggle}
 						>
 							Cigna
 						</Menu.Item>
 						<Menu.Item
-							as="a"
-							href="https://www.deltadentalins.com/"
-							target="_blank"
+							as='a'
+							href='https://www.deltadentalins.com/'
+							target='_blank'
 							primary
 							onClick={this.handleToggle}
 						>
 							Delta Dental Premier
 						</Menu.Item>
-						<Menu.Item as="a">Se Habla Español</Menu.Item>
-						<Menu.Item as="a" primary onClick={this.handleToggle}>
+						<Menu.Item as='a'>Se Habla Español</Menu.Item>
+						<Menu.Item as='a' primary onClick={this.handleToggle}>
 							Close
 						</Menu.Item>
 					</Sidebar>
 
-					<Sidebar.Pusher dimmed={sidebarOpened} style={{ minHeight: '100vh' }}>
+					<Sidebar.Pusher dimmed={sidebarOpened} style={{ minHeight: "100vh" }}>
 						<Segment
 							inverted
-							textAlign="center"
-							style={{ minHeight: 550, padding: '1em 0em' }}
+							textAlign='center'
+							style={{ minHeight: 550, padding: "1em 0em" }}
 							vertical
-							className="staff-background"
+							className='staff-background'
 						>
 							<Container>
 								<Menu
 									inverted
 									pointing
 									secondary
-									size="large"
-									className="top-nav"
+									size='large'
+									className='top-nav'
 								>
 									<Menu.Item onClick={this.handleToggle}>
-										<Icon name="sidebar" />
+										<Icon name='sidebar' />
 									</Menu.Item>
-									<Menu.Item position="right">
-										<Button as="a" iverted href="#find-us">
+									<Menu.Item position='right'>
+										<Button as='a' iverted href='#find-us'>
 											Find Us
 										</Button>
 										<Button
-											as="a"
-											href="tel:-864-582-5000"
+											as='a'
+											href='tel:-864-582-5000'
 											inverted
-											style={{ marginLeft: '0.5em' }}
+											style={{ marginLeft: "0.5em" }}
 										>
 											582-5000
 										</Button>
@@ -306,75 +306,75 @@ class TabletContainer extends Component {
 			<Responsive {...Responsive.onlyTablet}>
 				<Sidebar.Pushable>
 					<Sidebar
-						style={{ padding: '15px 0 0 15px' }}
+						style={{ padding: "15px 0 0 15px" }}
 						as={Menu}
-						animation="uncover"
+						animation='uncover'
 						inverted
 						vertical
 						visible={sidebarOpened}
 					>
-						<Menu.Item as="a" href="#staff" onClick={this.handleToggle}>
+						<Menu.Item as='a' href='#staff' onClick={this.handleToggle}>
 							Staff
 						</Menu.Item>
-						<Menu.Item as="a" href="#services" onClick={this.handleToggle}>
+						<Menu.Item as='a' href='#services' onClick={this.handleToggle}>
 							Services
 						</Menu.Item>
-						<Menu.Item as="a" href="#social" onClick={this.handleToggle}>
+						<Menu.Item as='a' href='#social' onClick={this.handleToggle}>
 							Social
 						</Menu.Item>
 						<Menu.Item
 							onClick={this.handleToggle}
-							as="a"
-							href="https://www.facebook.com/pinestdentalsc/"
-							target="_blank"
+							as='a'
+							href='https://www.facebook.com/pinestdentalsc/'
+							target='_blank'
 						>
 							Facebook
 						</Menu.Item>
 						<Menu.Item
 							onClick={this.handleToggle}
-							as="a"
-							href="https://www.instagram.com/pinestdentalsc/"
-							target="_blank"
+							as='a'
+							href='https://www.instagram.com/pinestdentalsc/'
+							target='_blank'
 						>
 							Instagram
 						</Menu.Item>
 						<Menu.Item
-							as="a"
-							href="#find-us"
+							as='a'
+							href='#find-us'
 							primary
 							onClick={this.handleToggle}
 						>
 							Contact & Find Us
 						</Menu.Item>
 						<Menu.Item
-							as="a"
-							href="https://drive.google.com/drive/folders/1eG2DDF_sEuRfNO4vIPYP1Rt8vad8-K00?usp=sharing"
-							target="_blank"
+							as='a'
+							href='https://drive.google.com/drive/folders/1eG2DDF_sEuRfNO4vIPYP1Rt8vad8-K00?usp=sharing'
+							target='_blank'
 							primary
 							onClick={this.handleToggle}
 						>
 							Patient Forms
 						</Menu.Item>
 						<Menu.Item
-							as="a"
-							href="https://www.cigna.com/"
-							target="_blank"
+							as='a'
+							href='https://www.cigna.com/'
+							target='_blank'
 							primary
 							onClick={this.handleToggle}
 						>
 							Cigna
 						</Menu.Item>
 						<Menu.Item
-							as="a"
-							href="https://www.deltadentalins.com/"
-							target="_blank"
+							as='a'
+							href='https://www.deltadentalins.com/'
+							target='_blank'
 							primary
 							onClick={this.handleToggle}
 						>
 							Delta Dental Premier
 						</Menu.Item>
-						<Menu.Item as="a">Se Habla Español</Menu.Item>
-						<Menu.Item as="a" primary onClick={this.handleToggle}>
+						<Menu.Item as='a'>Se Habla Español</Menu.Item>
+						<Menu.Item as='a' primary onClick={this.handleToggle}>
 							Close
 						</Menu.Item>
 					</Sidebar>
@@ -382,35 +382,35 @@ class TabletContainer extends Component {
 					<Sidebar.Pusher
 						dimmed={sidebarOpened}
 						onClick={this.handleToggle}
-						style={{ minHeight: '100vh' }}
+						style={{ minHeight: "100vh" }}
 					>
 						<Segment
 							inverted
-							textAlign="center"
-							style={{ minHeight: 550, padding: '1em 0em' }}
+							textAlign='center'
+							style={{ minHeight: 550, padding: "1em 0em" }}
 							vertical
-							className="staff-background"
+							className='staff-background'
 						>
 							<Container>
 								<Menu
 									inverted
 									pointing
 									secondary
-									size="large"
-									className="top-nav"
+									size='large'
+									className='top-nav'
 								>
 									<Menu.Item onClick={this.handleToggle}>
-										<Icon name="sidebar" />
+										<Icon name='sidebar' />
 									</Menu.Item>
-									<Menu.Item position="right">
-										<Button as="a" inverted>
+									<Menu.Item position='right'>
+										<Button as='a' inverted>
 											Contact Us
 										</Button>
 										<Button
-											as="a"
-											href="tel:-864-582-5000"
+											as='a'
+											href='tel:-864-582-5000'
 											inverted
-											style={{ marginLeft: '0.5em' }}
+											style={{ marginLeft: "0.5em" }}
 										>
 											582-5000
 										</Button>
@@ -452,17 +452,17 @@ export default class LandingPage extends Component {
 		};
 	}
 	componentDidMount() {
-		let url = 'https://yelp-proxy-server.herokuapp.com/pinestreetdentalsc';
+		let url = "https://yelp-proxy-server.herokuapp.com/pinestreetdentalsc";
 		let self = this;
 
 		fetch(url)
-			.then(function(response) {
+			.then(function (response) {
 				if (response.status >= 400) {
-					console.log('error', response);
+					console.log("error", response);
 				}
 				return response.json();
 			})
-			.then(function(data) {
+			.then(function (data) {
 				self.setState({ data: data });
 			});
 	}
@@ -478,166 +478,133 @@ export default class LandingPage extends Component {
 
 		return (
 			<ResponsiveContainer>
-				<Segment vertical>
-					<Grid stackable verticalAlign="middle">
-						<Grid.Row
-							style={{
-								backgroundImage:
-									'url(http://www.ourupstatesc.info/myimages/hub-bub_banner.jpg)',
-								height: '500px',
-								backgroundSize: 'cover',
-								padding: '0'
-							}}
-						>
-							<Grid.Column
-								mobile={11}
-								tablet={10}
-								computer={9}
-								style={{
-									background: 'rgba(255, 255, 255, 0.75)',
-									height: '100%',
-									display: 'flex',
-									justifyContent: 'center',
-									alignItems: 'center',
-									padding: '100px 50px',
-									textAlign: 'center'
-								}}
-							>
+				<Grid verticalAlign='middle' stackable>
+					<Grid.Row>
+						<Grid.Column mobile={16} tablet={16} computer={16}>
+							<Container text style={{ margin: "60px 0" }}>
 								<Header
-									as="h2"
+									as='h2'
 									style={{
-										textTransform: 'uppercase',
-										color: '#2185d0'
+										textTransform: "uppercase",
+										color: "#2185d0",
+										textAlign: "center"
 									}}
 								>
 									Pine Street Dental
 								</Header>
-								<p style={{ fontSize: '1.33em' }}>
+								<p style={{ fontSize: "1.33em", textAlign: "center" }}>
 									Providing general dentistry to the family and friends of
 									Spartanburg and the Upstate for over 40 years.
 								</p>
-								<p style={{ fontSize: '1.2em' }}>
+								<p style={{ fontSize: "1.2em", textAlign: "center" }}>
 									Proporcionando odontología general a la familia y amigos de
 									Spartanburg y el norte del estado por más de 40 años.
 								</p>
-							</Grid.Column>
-							<Grid.Column floated="right" width={6}>
-									<Image
-										bordered
-										rounded
-										fluid
-										style={{ objectFit: "cover" }}
-									src={OfficeDoor}
-									alt="Pinestreet Dental Spartanburg Dentist Near Me"
-									/>
-								</Grid.Column>
-						</Grid.Row>
-					</Grid>
-				</Segment>
+							</Container>
+						</Grid.Column>
+					</Grid.Row>
+				</Grid>
+				<Grid>
+					<Grid.Row
+						textAlign='center'
+						centered
+						style={{
+							padding: "60px 30px",
+							backgroundColor: "#add8e6",
+						}}
+					>
+						<Grid.Column width={16} centered>
+							<Header as='h2' content='TESTIMONIALS' textAlign='center'/>
+						</Grid.Column>
+						<Grid.Column
+							width={8}
+							style={{
+								paddingBottom: "5em",
+								paddingTop: "5em",
+								display: "flex",
+								alignItems: "center"
+							}}
+						>
+							{reviews[0] ? (
+								<Item.Group>
+									<Item
+										style={{
+											display: "flex",
+											alignItems: "center",
+											paddingLeft: "15px"
+										}}
+									>
+										<Item.Image
+											size='tiny'
+											src={reviews[0].profile_photo_url}
+											alt='Pinestreet Dental Spartanburg Dentist Near Me'
+										/>
 
-				<div
-					style={{
-						padding: '0em',
-						backgroundColor: '#add8e6',
-						boxShadow: 'rgba(34, 36, 38, 0.15) 0px 7px 10px'
-					}}
-				>
-					<Grid celled="internally" columns="equal" stackable>
-						<Grid.Row textAlign="center" centered>
-							<Grid.Column
-								width={8}
-								style={{
-									paddingBottom: '5em',
-									paddingTop: '5em',
-									display: 'flex',
-									alignItems: 'center'
-								}}
-							>
-								{reviews[0] ? (
-									<Item.Group>
-										<Item>
-											<Header as="h2" content="TESTIMONIALS" />
-
-										</Item>
-										<Item
-											style={{
-												display: 'flex',
-												alignItems: 'center',
-												paddingLeft: '15px'
-											}}
-										>
-											<Item.Image
-												size="tiny"
-												src={reviews[0].profile_photo_url}
-												alt="Pinestreet Dental Spartanburg Dentist Near Me"
-											/>
-
-											<Item.Content style={{ textAlign: 'center' }}>
-												<Item.Description>{reviews[0].text}</Item.Description>
-												<Item.Extra>{reviews[0].author_name}</Item.Extra>
-											</Item.Content>
-										</Item>
-									</Item.Group>
-								) : (
-									''
+										<Item.Content style={{ textAlign: "center" }}>
+											<Item.Description>{reviews[0].text}</Item.Description>
+											<Item.Extra>{reviews[0].author_name}</Item.Extra>
+										</Item.Content>
+									</Item>
+								</Item.Group>
+							) : (
+									""
 								)}
-							</Grid.Column>
-							<Grid.Column
-								width={8}
-								style={{
-									paddingBottom: '5em',
-									paddingTop: '5em',
-									display: 'flex',
-									flexDirection: 'column',
-									justifyContent: 'space-between'
-								}}
-							>
-								{reviews[1] ? (
-									<Item.Group>
-										<Item style={{ display: 'flex', alignItems: 'center' }}>
-											<Item.Image
-												size="tiny"
-												src={reviews[1].profile_photo_url}
-												alt="Pinestreet Dental Spartanburg Dentist Near Me"
-											/>
+						</Grid.Column>
+						<Grid.Column
+							width={8}
+							style={{
+								paddingBottom: "5em",
+								paddingTop: "5em",
+								display: "flex",
+								flexDirection: "column",
+								justifyContent: "space-between"
+							}}
+						>
+							{reviews[1] ? (
+								<Item.Group>
+									<Item style={{ display: "flex", alignItems: "center" }}>
+										<Item.Image
+											size='tiny'
+											src={reviews[1].profile_photo_url}
+											alt='Pinestreet Dental Spartanburg Dentist Near Me'
+										/>
 
-											<Item.Content style={{ textAlign: 'center' }}>
-												<Item.Description>{reviews[1].text}</Item.Description>
-												<Item.Extra>{reviews[1].author_name}</Item.Extra>
-											</Item.Content>
-										</Item>
-										<Divider />
+										<Item.Content style={{ textAlign: "center" }}>
+											<Item.Description>{reviews[1].text}</Item.Description>
+											<Item.Extra>{reviews[1].author_name}</Item.Extra>
+										</Item.Content>
+									</Item>
+									<Divider />
 
-										<Item style={{ display: 'flex', alignItems: 'center' }}>
-											<Item.Image
-												size="tiny"
-												src={reviews[2].profile_photo_url}
-												alt="Pinestreet Dental Spartanburg Dentist Near Me"
-											/>
-											<Item.Content style={{ textAlign: 'center' }}>
-												<Item.Description>{reviews[2].text}</Item.Description>
-												<Item.Extra>{reviews[2].author_name}</Item.Extra>
-											</Item.Content>
-										</Item>
-									</Item.Group>
-								) : (
-									''
+									<Item style={{ display: "flex", alignItems: "center" }}>
+										<Item.Image
+											size='tiny'
+											src={reviews[2].profile_photo_url}
+											alt='Pinestreet Dental Spartanburg Dentist Near Me'
+										/>
+										<Item.Content style={{ textAlign: "center" }}>
+											<Item.Description>{reviews[2].text}</Item.Description>
+											<Item.Extra>{reviews[2].author_name}</Item.Extra>
+										</Item.Content>
+									</Item>
+								</Item.Group>
+							) : (
+									""
 								)}
-							</Grid.Column>
-						</Grid.Row>
-					</Grid>
-				</div>
-				<Segment style={{ padding: '2em 0em' }} vertical>
+						</Grid.Column>
+					</Grid.Row>
+				</Grid>
+				<Segment style={{ padding: "60px 0" }} vertical>
 					<Container text>
 						<Divider
-							id="services"
-							as="h1"
-							className="header"
+							id='services'
+							as='h1'
+							className='header'
 							horizontal
 							style={{
-								margin: '2em 0em',
-								textTransform: 'uppercase',
-								color: '#2185d0'
+								margin: "2em 0em",
+								textTransform: "uppercase",
+								color: "#2185d0"
 							}}
 						>
 							<a>Services</a>
@@ -649,10 +616,10 @@ export default class LandingPage extends Component {
 									<List
 										link
 										style={{
-											display: 'flex',
-											flexDirection: 'column',
-											alignItems: 'center',
-											fontSize: '1.5rem'
+											display: "flex",
+											flexDirection: "column",
+											alignItems: "center",
+											fontSize: "1.5rem"
 										}}
 									>
 										<List.Item>Cleaning</List.Item>
@@ -666,10 +633,10 @@ export default class LandingPage extends Component {
 									<List
 										link
 										style={{
-											display: 'flex',
-											flexDirection: 'column',
-											alignItems: 'center',
-											fontSize: '1.5rem'
+											display: "flex",
+											flexDirection: "column",
+											alignItems: "center",
+											fontSize: "1.5rem"
 										}}
 									>
 										<List.Item>Crowns</List.Item>
@@ -679,21 +646,20 @@ export default class LandingPage extends Component {
 										<List.Item>Se Habla Español</List.Item>
 									</List>
 								</Grid.Column>
-								
 							</Grid.Row>
 						</Grid>
 					</Container>
 				</Segment>
-				<Segment style={{ padding: '2em 0' }} vertical id="staff">
-					<Grid celled="internally" columns="equal" stackable centered>
-						<Grid.Row textAlign="center">
+				<Segment style={{ padding: "2em 0" }} vertical id='staff'>
+					<Grid celled='internally' columns='equal' stackable centered>
+						<Grid.Row textAlign='center'>
 							<Grid.Column mobile={16} tablet={16} computer={16}>
 								<Staff />
 							</Grid.Column>
 						</Grid.Row>
 					</Grid>
 				</Segment>
-				<Container fluid className="local" id="find-us">
+				<Container fluid className='local' id='find-us'>
 					<Grid centered>
 						<Grid.Row>
 							<Grid.Column mobile={16} tablet={16} computer={15}>
@@ -703,54 +669,54 @@ export default class LandingPage extends Component {
 					</Grid>
 				</Container>
 				<Segment
-					style={{ padding: '1em 0', background: '#e9ecef' }}
+					style={{ padding: "1em 0", background: "#e9ecef" }}
 					vertical
-					id="blog"
+					id='blog'
 				>
 					<Container>
 						<Divider
-							id="blog"
-							as="h1"
-							className="header"
+							id='blog'
+							as='h1'
+							className='header'
 							horizontal
 							style={{
-								margin: '3em 0em',
-								textTransform: 'uppercase',
-								color: '#2185d0'
+								margin: "3em 0em",
+								textTransform: "uppercase",
+								color: "#2185d0"
 							}}
 						>
-							<a href="social">Social Media</a>
+							<a href='social'>Social Media</a>
 						</Divider>
-						<Grid stackable id="social">
+						<Grid stackable id='social'>
 							<Grid.Row>
 								<Grid.Column width={8}>
 									<Blog />
 								</Grid.Column>
 								<Grid.Column width={8}>
 									<iframe
-										title="pinest-denal-facebook"
-										src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpinestdentalsc%2F&tabs=timeline&width=500&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=527935110921167"
+										title='pinest-denal-facebook'
+										src='https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpinestdentalsc%2F&tabs=timeline&width=500&height=800&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=527935110921167'
 										style={{
-											width: '100%',
-											height: '800px',
-											border: 'none',
-											overflow: 'hidden'
+											width: "100%",
+											height: "800px",
+											border: "none",
+											overflow: "hidden"
 										}}
-										scrolling="no"
-										frameborder="0"
-										allowTransparency="true"
+										scrolling='no'
+										frameborder='0'
+										allowTransparency='true'
 									/>
 								</Grid.Column>
 							</Grid.Row>
 						</Grid>
 					</Container>
 				</Segment>
-				<Segment inverted vertical style={{ padding: '2em 0em' }}>
+				<Segment inverted vertical style={{ padding: "2em 0em" }}>
 					<Container>
 						<Grid divided inverted stackable>
 							<Grid.Row>
 								<Grid.Column width={4}>
-									<Header inverted as="h4" content="Services" />
+									<Header inverted as='h4' content='Services' />
 									<List link inverted>
 										<List.Item>Cleaning</List.Item>
 										<List.Item>Exams</List.Item>
@@ -763,76 +729,76 @@ export default class LandingPage extends Component {
 									</List>
 								</Grid.Column>
 								<Grid.Column width={4}>
-									<Header as="h4" inverted>
+									<Header as='h4' inverted>
 										Patient Forms
 									</Header>
 									<List.Item
-										as="a"
-										href="https://drive.google.com/drive/folders/1eG2DDF_sEuRfNO4vIPYP1Rt8vad8-K00?usp=sharing"
-										target="_blank"
+										as='a'
+										href='https://drive.google.com/drive/folders/1eG2DDF_sEuRfNO4vIPYP1Rt8vad8-K00?usp=sharing'
+										target='_blank'
 									>
 										See Forms
 									</List.Item>
 
-									<Header as="h4" inverted>
+									<Header as='h4' inverted>
 										Accepted Insurances
 									</Header>
 									<List link inverted>
 										<List.Item
-											as="a"
-											href="https://www.cigna.com/"
-											target="_blank"
+											as='a'
+											href='https://www.cigna.com/'
+											target='_blank'
 										>
 											Cigna
 										</List.Item>
 										<List.Item
-											as="a"
-											href="https://www.deltadentalins.com/"
-											target="_blank"
+											as='a'
+											href='https://www.deltadentalins.com/'
+											target='_blank'
 										>
 											Delta Dental Premier
 										</List.Item>
 									</List>
 								</Grid.Column>
 								<Grid.Column width={4}>
-									<Header as="h4" inverted>
+									<Header as='h4' inverted>
 										Contact & Patient Information
 									</Header>
 									<List link inverted>
-										<List.Item as="a">(864) 582-5000</List.Item>
-										<List.Item as="a">
+										<List.Item as='a'>(864) 582-5000</List.Item>
+										<List.Item as='a'>
 											364 S. Pine Street, Suite A-101, Spartanburg, SC 29302
 										</List.Item>
 									</List>
 								</Grid.Column>
 								<Grid.Column width={2}>
-									<Header inverted as="h4" content="Social" />
+									<Header inverted as='h4' content='Social' />
 									<List link inverted>
 										<List.Item
-											as="a"
-											href="https://www.facebook.com/pinestdentalsc/"
-											target="_blank"
+											as='a'
+											href='https://www.facebook.com/pinestdentalsc/'
+											target='_blank'
 										>
 											Facebook
 										</List.Item>
 										<List.Item
-											as="a"
-											href="https://www.instagram.com/pinestdentalsc/"
-											target="_blnak"
+											as='a'
+											href='https://www.instagram.com/pinestdentalsc/'
+											target='_blnak'
 										>
 											Instagram
 										</List.Item>
 									</List>
-									<Header inverted as="h4" content="Website" />
+									<Header inverted as='h4' content='Website' />
 									<List link inverted>
 										<List.Item
-											as="a"
-											href="http://wwww.matiasmariani.io"
-											target="_blank"
+											as='a'
+											href='http://wwww.matiasmariani.io'
+											target='_blank'
 										>
 											Matias Mariani
 										</List.Item>
-										<List.Item as="a">&reg; PineStDentalSC 2018</List.Item>
+										<List.Item as='a'>&reg; PineStDentalSC 2020</List.Item>
 									</List>
 								</Grid.Column>
 							</Grid.Row>
